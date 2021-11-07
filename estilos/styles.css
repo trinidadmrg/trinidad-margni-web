@@ -15,6 +15,24 @@ body {
     padding: 0px;
 }
 
+.gridContainer>* {
+    text-align: center;
+    border: solid #7A4255;
+    border-width: thin;
+}
+
+.gridContainer {
+    display: grid;
+    gap: 0px;
+    grid-template-areas:
+        "header"
+        "navbar"
+        "main"
+        "box-1"
+        "box-2"
+        "footer";
+}
+
 h1 {
     color: #C76B8A;
     font-size: 50px;
@@ -74,33 +92,24 @@ pr {
     font-family: Poppins;
 }
 
-.sinPadding{
-    padding: 0px;    
-}
-
-.fondoRosa{
-    background-color: #EDBBCA;
-}
-
 /*-------------------- Header --------------------*/
 
-.block__Header {
+.header {
+    grid-area: header;
     background-color: #343434;
-    display: flex;
-    justify-content: center;
-    padding: 0px;
-    margin: 0px;
 }
 
-.block__Header__imagenHeader {
+.imagenHeader {
     height: 100%;
 }
 
 /*-------------------- Menu de Navegación --------------------*/
 
-.menu__Navbar {
+.navbar {
+    grid-area: navbar;
     list-style: none;
     font-weight: normal;
+    color: #343434;
     text-transform: uppercase;
     font-family: Roboto Condensed;
     border: solid #EDBBCA;
@@ -108,10 +117,6 @@ pr {
     text-align: center;
     background-color: #EDBBCA;
     margin: 0px;
-    border: solid #343434;
-    border-width: 1px;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 .listaMenu {
@@ -120,17 +125,14 @@ pr {
     justify-content: space-around;
     flex-flow: nowrap;
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 li a {
     color: #343434;
     text-decoration: none;
     text-align: center;
-}
-
-li a:hover {
-    transition: color 1s;    
-    color: #FF629F; 
 }
 
 li {
@@ -143,6 +145,7 @@ li {
 /*-------------------- Sección Main --------------------*/
 
 .main {
+    grid-area: main;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -178,7 +181,7 @@ li {
 
 /*-------------------- Box-1 --------------------*/
 
-.box__Principal {
+.box-1 {
     background-color: white;
     border-bottom: solid #7A4255;
     border-width: 1px;
@@ -190,7 +193,7 @@ li {
 
 /*-------------------- Box-2 --------------------*/
 
-.box__Secundario {
+.box-2 {
     background-color: white;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -198,9 +201,10 @@ li {
     flex-direction: column;
 }
 
+
 /*-------------------- Footer --------------------*/
 
-.box__Footer {
+.footer {
     background-color: #343434;
     display: flex;
     flex-direction: column;
@@ -214,7 +218,7 @@ li {
     text-align: center;
 }
 
-.box__Footer__ContenedorRedes {
+.contenedorRedes {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -229,7 +233,8 @@ li {
 /*--------------------------------- Página Inicio ---------------------------------*/
 
 
-.box__Principal__Aptitudes {
+.listaAptitudes {
+    display: block;
     color: #343434;
     font-size: 17px;
     font-family: Poppins;
@@ -237,8 +242,6 @@ li {
     font-weight: 300;
     line-height: 1.6;
     letter-spacing: normal;
-    display: flex;
-    flex-direction: column;
 }
 
 
@@ -259,12 +262,11 @@ li {
     text-decoration: none;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 300px;
 }
 
 /*--------------------------------- Página Certificaciones ---------------------------------*/
 
-.box__Principal__contenedorCertificados {
+.contenedorCertificados {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -279,10 +281,6 @@ li {
     border-width: 2px;
     margin-top: 20px;
     margin-left: 3px;
-}
-
-.imagenChica:hover {
-    transform: scale(1.2,1.2)
 }
 
 .seccionCertificados {
@@ -373,7 +371,7 @@ textarea {
 
 /*--------------------------------- Página Portafolio ---------------------------------*/
 
-.box__Principal__ContenedorPortafolio{
+.contenedorPortafolio{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -401,8 +399,6 @@ textarea {
     color: #343434;
     font-size: 19px;
     font-family: Poppins;
-    padding-left: 35%;
-    padding-right: 35%;
 }
 
 /*--------------------------------- Media Query ---------------------------------*/
@@ -575,43 +571,4 @@ textarea {
         height: 200px;
     }
 
-}
-
-.imagenB{
-display: block;
-}
-
-.imagenA{
-    display: block;
-}
-
-@media only screen and (max-width: 992px){
-    .imagenB{
-        display: none;
-    }    
-}
-
-@media only screen and (max-width: 768px){
-    .imagenB{
-        display: block;
-        padding-top: 20px;
-        padding-right: 100px;
-        padding-left: 100px;
-        }    
-
-    .imagenA{
-        display: none;
-    }
-    
-}
-
-@media only screen and (max-width: 576px){
-    .imagenB{
-        display: block;
-        padding: 0px;
-    }    
-
-    .imagenA{
-        display: none;
-    }
 }

@@ -1,5 +1,10 @@
 @charset "UTF-8";
 /*--------------------------------- Estilos comunes a todas las páginas ---------------------------------*/
+/*-------------------- Variables, Mixings, Mapas, Listas, etc --------------------*/
+/*-------------------- Variable --------------------*/
+/*-------------------- Mixing --------------------*/
+/*-------------------- Mapa --------------------*/
+/*Le puse partials porque no se me ocurría qué poner*/
 /*-------------------- Estructura y Estilos Generales --------------------*/
 html {
   height: 100%; }
@@ -67,6 +72,10 @@ pr {
 
 .sinPadding {
   padding: 0px; }
+
+.sinEspacios {
+  padding: 0px;
+  margin: 0px; }
 
 .fondoRosa {
   background-color: #EDBBCA; }
@@ -250,9 +259,16 @@ pr {
 .box__Footer {
   background-color: #343434;
   display: flex;
-  flex-direction: column;
-  height: 200px;
-  margin-top: 0px; }
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 0px;
+  padding: 20px; }
+  .box__Footer__Columna {
+    display: flex;
+    flex-direction: column; }
   .box__Footer__TextoFooter {
     color: white;
     font-size: 15px;
@@ -261,10 +277,20 @@ pr {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 50px; }
+    padding: 0px; }
   .box__Footer__IconoRedes {
     height: 50px;
     margin: 2px; }
+  .box__Footer__Lista {
+    color: white;
+    font-size: 15px;
+    list-style: none;
+    padding: 0px; }
+  .box__Footer__Lista a {
+    text-decoration: none;
+    color: white; }
+  .box__Footer__Lista a:hover {
+    color: #FF629F; }
 
 /*-------------------- Formulario --------------------*/
 legend {
@@ -394,6 +420,8 @@ textarea {
     font-size: 35px; }
   h2 {
     font-size: 30px; }
+  .box__Footer {
+    flex-direction: column; }
   .box__Principal__ContenedorPortafolio__Trabajos {
     margin: 20px;
     flex-wrap: nowrap;

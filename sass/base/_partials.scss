@@ -1,0 +1,21 @@
+/*-------------------- Variable --------------------*/
+
+$gris-principal: #343434 ;
+$bordo-principal: #7A4255 ;
+$rosa-primario: #C76B8A ;
+$rosa-secundario: #FB88AF ;
+$rosa-terciario: #FBD3E0 ;
+
+/*-------------------- Mixing --------------------*/
+
+@mixin espaciosCajas ($padding, $margin) {
+    padding: $padding;
+    margin: $margin;
+}
+
+/*-------------------- Mapa --------------------*/
+
+$tamaños-fuentes: (
+    "chica": 19px,
+    "media": 21px,
+    "grande": 40px)
