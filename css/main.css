@@ -109,23 +109,25 @@ pr {
   text-align: center;
   background-color: #EDBBCA;
   margin: 0px;
-  border: solid #343434;
   border-width: 1px;
   padding-top: 10px;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  color: white; }
   .menu__Navbar__Lista {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-flow: nowrap;
-    text-align: center; }
+    text-align: center;
+    color: white; }
     .menu__Navbar__Lista li {
       display: inline;
       text-decoration: none;
       margin-left: 5px;
-      margin-right: 5px; }
+      margin-right: 5px;
+      color: white; }
       .menu__Navbar__Lista li a {
-        color: #343434;
+        color: white;
         text-decoration: none;
         text-align: center; }
       .menu__Navbar__Lista li a:hover {
@@ -144,9 +146,11 @@ pr {
   .box__Main__box__Main__TextoMain {
     font-size: 22px; }
   .box__Main__ContenedorImagenA {
-    background-color: #FBD3E0; }
+    background-color: #FBD3E0;
+    height: 700px; }
   .box__Main__ContenedorImagenB {
-    background-color: #FBD3E0; }
+    background-color: #FBD3E0;
+    height: 700px; }
   .box__Main__SobreLaPagina {
     display: flex;
     flex-direction: column;
@@ -223,6 +227,9 @@ pr {
     margin-top: 20px;
     margin-bottom: 20px;
     width: 300px; }
+  .box__Principal__boton:hover {
+    background-color: #343434;
+    color: #C76B8A; }
   .box__Principal__SeccionesTexto {
     border-bottom: solid #7A4255;
     border-width: 1px;
@@ -231,6 +238,8 @@ pr {
     margin-top: 0px;
     background-color: white;
     padding-top: 20px; }
+  .box__Principal div a:hover {
+    color: #FF629F; }
 
 /*-------------------- Box-2 --------------------*/
 .box__Secundario {
@@ -254,6 +263,9 @@ pr {
     margin-top: 20px;
     margin-bottom: 20px;
     width: 300px; }
+  .box__Secundario__boton:hover {
+    background-color: #343434;
+    color: #C76B8A; }
 
 /*-------------------- Footer --------------------*/
 .box__Footer {
@@ -265,7 +277,7 @@ pr {
   align-items: center;
   height: 100%;
   margin-top: 0px;
-  padding: 20px; }
+  padding: 100px; }
   .box__Footer__Columna {
     display: flex;
     flex-direction: column; }

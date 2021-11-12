@@ -21,7 +21,7 @@ body {
 }
 
 h1 {
-    color: #C76B8A;
+    color: $rosa-primario;
     font-size: 25px * 2;
     text-transform: uppercase;
     font-family: Anton;
@@ -126,23 +126,25 @@ pr {
     text-align: center;
     background-color: #EDBBCA;
     margin: 0px;
-    border: solid $gris-principal;
     border-width: 1px;
     padding-top: 10px;
     padding-bottom: 10px;
+    color: white;
         &__Lista{
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             flex-flow: nowrap;
             text-align: center;
+            color: white;
                 & li {
                     display: inline;
                     text-decoration: none;
                     margin-left: 5px;
                     margin-right: 5px;
+                    color: white;
                         & a {
-                            color: $gris-principal;
+                            color: white;
                             text-decoration: none;
                             text-align: center;
                     }
@@ -162,7 +164,7 @@ pr {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    border-bottom: solid #7A4255;
+    border-bottom: solid $bordo-principal;
     border-width: 1px;
     background-color: white;
     overflow: hidden;
@@ -170,10 +172,12 @@ pr {
             font-size: 22px;
         }
         &__ContenedorImagenA{
-            background-color: #FBD3E0;
+            background-color: $rosa-terciario;
+            height: 700px;
         }
         &__ContenedorImagenB{
-            background-color: #FBD3E0;
+            background-color: $rosa-terciario;
+            height: 700px;
         }
         &__SobreLaPagina{
             display: flex;
@@ -186,7 +190,7 @@ pr {
 
 .box__Principal {
     background-color: white;
-    border-bottom: solid #7A4255;
+    border-bottom: solid $bordo-principal;
     border-width: 1px;
     padding-bottom: 50px;
     margin-top: 0px;
@@ -263,14 +267,21 @@ pr {
             margin-bottom: 20px;
             width: 300px;
         }
+        &__boton:hover{
+            background-color: $gris-principal;
+            color: $rosa-primario;
+        }
         &__SeccionesTexto{
-            border-bottom: solid #7A4255;
+            border-bottom: solid $bordo-principal;
             border-width: 1px;
             margin-bottom: 0px;
             padding-bottom: 50px;
             margin-top: 0px;
             background-color: white;
             padding-top: 20px;
+        }
+        div a:hover{
+            color: #FF629F;
         }
 }
 
@@ -298,6 +309,10 @@ pr {
             margin-bottom: 20px;
             width: 300px;
         }
+        &__boton:hover{
+            background-color: $gris-principal;
+            color: $rosa-primario;
+        }
 }
 
 /*-------------------- Footer --------------------*/
@@ -311,7 +326,7 @@ pr {
     align-items: center;
     height: 100%;
     margin-top: 0px;
-    padding: 20px;
+    padding: 100px;
         &__Columna{
             display: flex;
             flex-direction: column;
@@ -368,7 +383,7 @@ form {
 fieldset {
     border: none;
     font-weight: bold;
-    color: #C76B8A;
+    color: $rosa-primario;
 }
 
 label {
@@ -393,7 +408,7 @@ textarea {
 }
 
 .botonEnviar {
-    background-color: #C76B8A;
+    background-color: $rosa-primario;
     border: solid #FF629F;
     color: white;
     font-size: 15px;
