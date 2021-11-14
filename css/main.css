@@ -1,9 +1,9 @@
-@charset "UTF-8";
+/*--------------------------------- Imports ---------------------------------*/
 /*-------------------- Variable --------------------*/
 /*-------------------- Mixing --------------------*/
 /*-------------------- Mapa --------------------*/
-/*Le puse partials porque no se me ocurría qué poner*/
 /*--------------------------------- New Structure ---------------------------------*/
+/* Designed for Extra Large screens (min-width: 1367px)*/
 /*-------------------- Header --------------------*/
 .block__Header {
   background-color: black;
@@ -20,6 +20,11 @@
     font-size: 17px; }
   .block__Header div a {
     color: black; }
+  .block__Header__Banner {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    margin: 0px; }
 
 /*-------------------- Navbar --------------------*/
 .menu__Navbar {
@@ -59,6 +64,7 @@
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
+  justify-content: flex-start;
   background-color: white;
   height: 700px;
   padding: 0px;
@@ -75,6 +81,7 @@
       border-width: 2px; }
   .box__Main__SobreLaPagina {
     display: flex;
+    margin-left: 30px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start; }
@@ -119,13 +126,14 @@
       border: solid #343434;
       border-width: 1px;
       padding-bottom: 10px;
-      justify-content: space-around;
-      width: 457px; }
+      justify-content: space-around; }
     .box__Principal__ContenedorPortafolio__Imagen {
       margin-bottom: 10px;
       border: solid #343434;
       border-width: 1px;
       width: 100%; }
+    .box__Principal__ContenedorPortafolio p {
+      text-align: center; }
     .box__Principal__ContenedorPortafolio__LinkTexto {
       color: #343434;
       font-size: 19px; }
@@ -233,7 +241,7 @@
   .box__Footer__Lista a:hover {
     color: #FF629F; }
 
-/*-------------------- Otros Estilos Generales --------------------*/
+/*-------------------- Others --------------------*/
 html {
   height: 100%; }
 
@@ -294,12 +302,6 @@ pr {
   margin-bottom: 50px;
   margin-top: 50px; }
 
-/*-------------------- Menu de Navegación --------------------*/
-/*-------------------- Sección Main --------------------*/
-/*-------------------- Box-1 --------------------*/
-/*-------------------- Box-2 --------------------*/
-/*-------------------- Footer --------------------*/
-/*-------------------- Formulario --------------------*/
 legend {
   font-size: 25px;
   text-align: center;
@@ -347,129 +349,174 @@ textarea {
   padding: 5px;
   display: inline-block; }
 
-/*--------------------------------- Media Query ---------------------------------*/
-/*--------------------------------- Verificar si esto me sigue sirviendo o si con bootstrap ya se pisa ---------------------------------*/
-/*-------------------- Para Desktop Mediano --------------------*/
+/*-------------------------------------------------------- Media Query --------------------------------------------------------*/
+/* For Large Screens (max-width: 1366px)*/
 @media only screen and (max-width: 1366px) {
-  .box__Main__ContenedorImagenA {
-    height: 500px; }
-  .box__Main__ContenedorImagenB {
-    height: 500px; }
-  .box__Main__TextoMain {
-    font-size: 19px; }
-  h1 {
-    font-size: 39px; }
-  h2 {
-    font-size: 29px; } }
-
-/*-------------------- Para Desktop Más Chico --------------------*/
-@media only screen and (max-width: 1200px) {
-  .box__Main__ContenedorImagenA {
-    height: 400px; }
-  .box__Main__ContenedorImagenB {
-    height: 400px; }
-  h1 {
-    font-size: 30px; }
-  h2 {
-    font-size: 25px; }
-  .box__Main__TextoMain {
-    font-size: 17px; }
-  .box__Principal__ContenedorPortafolio__Imagen {
-    height: 250px; } }
-
-/*-------------------- Para Tablet --------------------*/
-@media only screen and (max-width: 768px) {
-  .box__Main__ContenedorImagenB {
-    max-height: 400px; }
-  .box__Main__ContenedorImagenA {
-    display: none; }
-  .block__Header__ImagenHeader {
-    height: 190px; }
-  .menu__Navbar {
-    font-size: 18px; }
-  .box__Main__TextoMain {
-    font-size: 16px; }
-  h1 {
-    padding-right: 60px;
-    padding-left: 60px;
-    font-size: 25px; }
-  h2 {
-    font-size: 20px; }
-  .box__Principal__ContenedorPortafolio {
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; }
-  .box__Principal__ContenedorPortafolio__Imagen {
-    height: 250px; } }
-
-/*-------------------- Para Mobile --------------------*/
-@media only screen and (max-width: 480px) {
-  .header {
-    height: 100px; }
-  .block__Header__ImagenHeader {
-    width: 100%;
-    max-height: 100%; }
-  .menu__Navbar__Lista {
-    flex-flow: wrap; }
-  .box__Main__ContenedorImagenB {
-    width: 90%;
-    max-height: 100%;
-    margin-left: 20px;
-    margin-right: 20px; }
-  .box__Main__ContenedorImagenA {
-    margin-top: 30px;
-    max-height: 400px; }
   .box__Main {
-    flex-direction: column; }
-  .box__Main__TextoMain {
-    font-size: 18px; }
+    height: 500px; }
   h1 {
-    font-size: 35px; }
-  h2 {
+    font-size: 40px; }
+  .box__Principal {
+    background-color: white; }
+    .box__Principal__Titulo {
+      background-color: #FBD3E0;
+      padding: 5px; }
+    .box__Principal__Aptitudes {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-family: 'PT Sans Narrow', sans-serif;
+      font-size: 20px; }
+    .box__Principal li {
+      list-style: none;
+      line-height: 3; } }
+
+/* For Small Screens (max-width: 1024px)*/
+@media only screen and (max-width: 1024px) {
+  .box__Main {
+    height: 400px; }
+  h1 {
     font-size: 30px; }
-  .box__Footer {
-    flex-direction: column; }
-  .box__Principal__ContenedorPortafolio__Trabajos {
-    margin: 20px;
-    flex-wrap: nowrap;
-    border: solid #343434;
-    border-width: 1px;
-    padding-bottom: 10px;
-    justify-content: space-around;
-    width: 300px; }
-  .box__Principal__ContenedorPortafolio__Imagen {
-    margin-bottom: 10px;
-    border: solid #343434;
-    border-width: 1px;
-    width: 300px; }
-  .box__Principal__ContenedorPortafolio__LinkTexto {
-    font-size: 15px; }
-  .box__Principal__ContenedorPortafolio__Imagen {
-    height: 200px; } }
+  h2 {
+    font-size: 25px; }
+  p {
+    font-size: 20px; }
+  .box__Principal {
+    background-color: white; }
+    .box__Principal__Titulo {
+      background-color: #FBD3E0;
+      padding: 5px; }
+    .box__Principal__Aptitudes {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-family: 'PT Sans Narrow', sans-serif;
+      font-size: 20px; }
+    .box__Principal li {
+      list-style: none;
+      line-height: 3; } }
 
-.box__Main__ContenedorImagenB {
-  display: block; }
-
-.box__Main__ContenedorImagenA {
-  display: block; }
-
-@media only screen and (max-width: 992px) {
-  .box__Main__ContenedorImagenB {
-    display: none; } }
-
+/* For iPads and Tablets (max-width: 768px)*/
 @media only screen and (max-width: 768px) {
-  .box__Main__ContenedorImagenB {
-    display: block;
-    padding-top: 20px;
-    padding-right: 100px;
-    padding-left: 100px; }
-  .box__Main__ContenedorImagenA {
-    display: none; } }
+  .block__Header {
+    background-color: black;
+    color: white;
+    padding: 0px;
+    margin: 0px; }
+    .block__Header__Banner {
+      display: flex;
+      width: 100%;
+      background-color: black;
+      justify-content: center;
+      margin: 0px; }
+      .block__Header__Banner img {
+        width: 100%;
+        margin-top: 20px; }
+  .box__Main {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 0px;
+    margin: 0px;
+    height: 100%; }
+    .box__Main__ContenedorImagen {
+      height: 100%;
+      padding: 0px;
+      margin: 0px;
+      display: flex;
+      justify-content: center; }
+      .box__Main__ContenedorImagen__Imagen {
+        height: 500px;
+        border-right: none; }
+    .box__Main__SobreLaPagina {
+      display: flex;
+      margin-left: 0px;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      margin-top: 40px; }
+  p {
+    text-align: center; }
+  .box__Principal {
+    background-color: white; }
+    .box__Principal__Titulo {
+      background-color: #FBD3E0;
+      padding: 5px;
+      margin-bottom: 30px; }
+    .box__Principal__Aptitudes {
+      padding-top: 0px;
+      padding-bottom: 0px;
+      font-family: 'PT Sans Narrow', sans-serif;
+      font-size: 20px; }
+      .box__Principal__Aptitudes li {
+        list-style: none;
+        line-height: 2.5;
+        text-align: center; }
+    .box__Principal__ContenedorCertificados {
+      flex-direction: column; }
+      .box__Principal__ContenedorCertificados__Certificado {
+        height: 300px;
+        border: solid #343434;
+        border-width: 2px;
+        margin-top: 20px;
+        margin-left: 3px; }
+      .box__Principal__ContenedorCertificados__ContenedorPortafolio {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around; }
+        .box__Principal__ContenedorCertificados__ContenedorPortafolio__Trabajos {
+          margin: 20px;
+          flex-wrap: nowrap;
+          border: solid #343434;
+          border-width: 1px;
+          padding-bottom: 10px;
+          justify-content: space-around;
+          width: 457px; }
+        .box__Principal__ContenedorCertificados__ContenedorPortafolio__Imagen {
+          margin-bottom: 10px;
+          border: solid #343434;
+          border-width: 1px;
+          width: 100%; }
+        .box__Principal__ContenedorCertificados__ContenedorPortafolio__LinkTexto {
+          color: #343434;
+          font-size: 19px; } }
 
-@media only screen and (max-width: 576px) {
-  .box__Main__ContenedorImagenB {
-    display: block;
-    padding: 0px; }
-  .box__Main__ContenedorImagenA {
-    display: none; } }
+/* For Mobile Devices (max-width: 480px)*/
+@media only screen and (max-width: 480px) {
+  .block__Header__Banner {
+    height: 90px; }
+    .block__Header__Banner img {
+      margin-top: 10px; }
+  .box__Principal__Aptitudes {
+    font-size: 18px; }
+    .box__Principal__Aptitudes li {
+      list-style: none;
+      line-height: 2; }
+  .box__Principal__Boton {
+    padding: 15px;
+    margin-top: 10px;
+    width: 200px;
+    font-size: 20px; }
+  .box__Principal__ContenedorCertificados {
+    flex-direction: column; }
+    .box__Principal__ContenedorCertificados__Certificado {
+      height: 200px;
+      border: solid #343434;
+      border-width: 2px;
+      margin-top: 20px;
+      margin-left: 3px; }
+  .box__Principal__ContenedorPortafolio h3 {
+    font-size: 20px; }
+  .box__Principal__ContenedorPortafolio p {
+    text-align: center;
+    font-size: 15px; }
+  .box__Principal .box__Secundario__Contenedor__Boton {
+    padding: 15px;
+    margin-top: 10px;
+    width: 200px;
+    font-size: 20px; }
+  form {
+    padding: 20px; } }
