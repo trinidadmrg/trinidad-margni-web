@@ -1,180 +1,98 @@
 @charset "UTF-8";
-/*--------------------------------- Estilos comunes a todas las páginas ---------------------------------*/
-/*-------------------- Variables, Mixings, Mapas, Listas, etc --------------------*/
 /*-------------------- Variable --------------------*/
 /*-------------------- Mixing --------------------*/
 /*-------------------- Mapa --------------------*/
 /*Le puse partials porque no se me ocurría qué poner*/
-/*-------------------- Estructura y Estilos Generales --------------------*/
-html {
-  height: 100%; }
-
-body {
-  min-height: 100%; }
-
-* {
-  margin: 0px;
-  padding: 0px; }
-
-h1 {
-  color: #C76B8A;
-  font-size: 50px;
-  text-transform: uppercase;
-  font-family: Anton;
-  text-align: center;
-  line-height: 1.0;
-  text-decoration: none;
-  letter-spacing: 2px;
-  margin: 0px;
-  padding-top: 30px;
-  padding-bottom: 10px;
-  padding-right: 30px;
-  padding-left: 30px; }
-
-h2 {
-  color: #FF88AF;
-  font-size: 40px;
-  text-transform: uppercase;
-  font-family: Anton;
-  text-align: center;
-  line-height: 1.6;
-  text-decoration: none;
-  letter-spacing: 2px;
-  margin: 0px;
-  padding-top: 5px;
-  padding-bottom: 10px; }
-
-h3 {
-  color: #343434;
-  font-size: 19px;
-  font-family: Poppins;
-  text-align: center;
-  font-weight: 300;
-  line-height: 1.3;
-  letter-spacing: normal;
-  margin: 0px; }
-
-p {
-  color: #343434;
-  font-size: 19px;
-  font-family: Poppins;
-  text-align: center;
-  font-weight: 300;
-  line-height: 1.6;
-  letter-spacing: normal;
-  padding-right: 25px;
-  padding-left: 25px; }
-
-pr {
-  color: #343434;
-  font-size: 21px;
-  font-family: Poppins; }
-
-.sinPadding {
-  padding: 0px; }
-
-.sinEspacios {
-  padding: 0px;
-  margin: 0px; }
-
-.fondoRosa {
-  background-color: #EDBBCA; }
-
-.fondoOscuro {
-  background-color: #343434; }
-
-.fondoClaro {
-  background-color: white;
-  margin-bottom: 50px;
-  margin-top: 50px; }
-
+/*--------------------------------- New Structure ---------------------------------*/
 /*-------------------- Header --------------------*/
 .block__Header {
-  background-color: #343434;
-  display: flex;
-  justify-content: center;
-  padding: 0px;
+  background-color: black;
+  color: white;
+  padding: 5px;
   margin: 0px; }
-  .block__Header__block__Header__ImagenHeader {
-    height: 100%; }
+  .block__Header__Iconos {
+    height: 25px;
+    width: 25px; }
+  .block__Header__Textos {
+    color: white;
+    padding: 0px;
+    margin: 0px;
+    font-size: 17px; }
+  .block__Header div a {
+    color: black; }
 
-/*-------------------- Menu de Navegación --------------------*/
+/*-------------------- Navbar --------------------*/
 .menu__Navbar {
   list-style: none;
-  font-weight: normal;
-  text-transform: uppercase;
-  font-family: Roboto Condensed;
-  border: solid #EDBBCA;
-  font-size: 25px;
   text-align: center;
-  background-color: #EDBBCA;
   margin: 0px;
-  border-width: 1px;
+  padding: 0px;
+  color: white;
+  display: flex;
+  justify-content: center;
   padding-top: 10px;
   padding-bottom: 10px;
-  color: white; }
+  font-size: 25px;
+  font-family: Oswald;
+  letter-spacing: 1px; }
   .menu__Navbar__Lista {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-flow: nowrap;
-    text-align: center;
-    color: white; }
+    text-align: center; }
     .menu__Navbar__Lista li {
       display: inline;
       text-decoration: none;
       margin-left: 5px;
-      margin-right: 5px;
-      color: white; }
+      margin-right: 5px; }
       .menu__Navbar__Lista li a {
-        color: white;
+        color: black;
         text-decoration: none;
         text-align: center; }
       .menu__Navbar__Lista li a:hover {
-        transition: color 1s;
+        transition: color 0.5s;
         color: #FF629F; }
 
-/*-------------------- Sección Main --------------------*/
+/*-------------------- Main --------------------*/
 .box__Main {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
-  border-bottom: solid #7A4255;
-  border-width: 1px;
   background-color: white;
-  overflow: hidden; }
+  height: 700px;
+  padding: 0px;
+  margin: 0px; }
   .box__Main__box__Main__TextoMain {
     font-size: 22px; }
-  .box__Main__ContenedorImagenA {
-    background-color: #FBD3E0;
-    height: 700px; }
-  .box__Main__ContenedorImagenB {
-    background-color: #FBD3E0;
-    height: 700px; }
+  .box__Main__ContenedorImagen {
+    height: 100%;
+    padding: 0px;
+    margin: 0px; }
+    .box__Main__ContenedorImagen__Imagen {
+      height: 100%;
+      border-right: solid black;
+      border-width: 2px; }
   .box__Main__SobreLaPagina {
     display: flex;
     flex-direction: column;
-    justify-content: center; }
+    justify-content: center;
+    align-items: flex-start; }
 
-/*-------------------- Box-1 --------------------*/
+/*-------------------- Box 1 --------------------*/
 .box__Principal {
-  background-color: white;
-  border-bottom: solid #7A4255;
-  border-width: 1px;
-  padding-bottom: 50px;
-  margin-top: 0px;
-  padding-top: 50px;
-  padding-bottom: 50px; }
+  background-color: white; }
+  .box__Principal__Titulo {
+    background-color: #FBD3E0;
+    padding: 5px; }
   .box__Principal__Aptitudes {
-    color: #343434;
-    font-size: 17px;
-    font-family: Poppins;
-    text-align: center;
-    font-weight: 300;
-    line-height: 1.6;
-    letter-spacing: normal;
-    display: flex;
-    flex-direction: column; }
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 30px; }
+  .box__Principal li {
+    list-style: none;
+    line-height: 3; }
   .box__Principal__ContenedorCertificados {
     display: flex;
     flex-direction: row;
@@ -210,8 +128,7 @@ pr {
       width: 100%; }
     .box__Principal__ContenedorPortafolio__LinkTexto {
       color: #343434;
-      font-size: 19px;
-      font-family: Poppins; }
+      font-size: 19px; }
   .box__Principal__boton {
     border: solid #FF88AF;
     background-color: #FF88AF;
@@ -221,7 +138,6 @@ pr {
     margin-right: auto;
     margin-left: auto;
     padding: 15px;
-    font-family: Anton;
     font-size: 30px;
     text-decoration: none;
     margin-top: 20px;
@@ -241,53 +157,66 @@ pr {
   .box__Principal div a:hover {
     color: #FF629F; }
 
-/*-------------------- Box-2 --------------------*/
+/*-------------------- Box 2 --------------------*/
 .box__Secundario {
   background-color: white;
-  padding-top: 50px;
-  padding-bottom: 50px;
   display: flex;
-  flex-direction: column; }
-  .box__Secundario__boton {
-    border: solid #FF88AF;
-    background-color: #FF88AF;
-    color: white;
-    text-align: center;
-    display: inline-block;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 15px;
-    font-family: Anton;
-    font-size: 30px;
-    text-decoration: none;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 300px; }
-  .box__Secundario__boton:hover {
-    background-color: #343434;
-    color: #C76B8A; }
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0px;
+  margin: 0px; }
+  .box__Secundario__Titulo {
+    background-color: #FBD3E0;
+    padding: 5px;
+    margin: 0px;
+    margin-top: 10px; }
+  .box__Secundario__Contenedor {
+    margin-top: 60px;
+    margin-bottom: 60px; }
+    .box__Secundario__Contenedor__Boton {
+      border: solid black;
+      background-color: #EDBBCA;
+      color: black;
+      text-align: center;
+      display: inline-block;
+      margin-right: auto;
+      margin-left: auto;
+      padding: 15px;
+      text-decoration: none;
+      margin-top: 10px;
+      width: 300px;
+      font-family: 'PT Sans Narrow', sans-serif;
+      font-size: 25px; }
+    .box__Secundario__Contenedor__Boton:hover {
+      background-color: black;
+      border-color: #EDBBCA;
+      color: #EDBBCA; }
 
 /*-------------------- Footer --------------------*/
 .box__Footer {
-  background-color: #343434;
+  background-color: black;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-content: center;
   align-items: center;
   height: 100%;
   margin-top: 0px;
-  padding: 100px; }
+  padding: 30px;
+  font-family: 'PT Sans Narrow', sans-serif; }
   .box__Footer__Columna {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    flex-wrap: wrap; }
   .box__Footer__TextoFooter {
     color: white;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center; }
   .box__Footer__ContenedorRedes {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 0px; }
   .box__Footer__IconoRedes {
@@ -304,6 +233,72 @@ pr {
   .box__Footer__Lista a:hover {
     color: #FF629F; }
 
+/*-------------------- Otros Estilos Generales --------------------*/
+html {
+  height: 100%; }
+
+body {
+  min-height: 100%; }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+h1 {
+  color: black;
+  text-align: center;
+  font-family: Oswald;
+  font-size: 50px; }
+
+h2 {
+  color: #EDBBCA;
+  text-align: center;
+  font-family: Oswald;
+  text-transform: uppercase; }
+
+h3 {
+  color: black;
+  text-align: center;
+  font-family: Oswald;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+p {
+  color: #343434;
+  font-size: 19px;
+  line-height: 1.6;
+  letter-spacing: normal;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 25px; }
+
+pr {
+  color: #343434;
+  font-size: 21px; }
+
+.sinPadding {
+  padding: 0px; }
+
+.sinEspacios {
+  padding: 0px;
+  margin: 0px; }
+
+.fondoRosa {
+  background-color: #EDBBCA; }
+
+.fondoOscuro {
+  background-color: #343434; }
+
+.fondoClaro {
+  background-color: white;
+  margin-bottom: 50px;
+  margin-top: 50px; }
+
+/*-------------------- Menu de Navegación --------------------*/
+/*-------------------- Sección Main --------------------*/
+/*-------------------- Box-1 --------------------*/
+/*-------------------- Box-2 --------------------*/
+/*-------------------- Footer --------------------*/
 /*-------------------- Formulario --------------------*/
 legend {
   font-size: 25px;
@@ -311,14 +306,16 @@ legend {
   text-decoration: underline; }
 
 form {
-  font-family: Poppins;
   font-size: 20px;
-  border: solid #343434;
+  font-family: Oswald;
   border-radius: 10px;
-  border-width: 3px;
   margin-top: 50px;
   padding: 15px;
-  display: inline-block; }
+  display: block;
+  padding: 100px; }
+
+button {
+  margin-top: 20px; }
 
 fieldset {
   border: none;
@@ -333,14 +330,12 @@ input {
   border-width: 1px;
   padding: 5px;
   margin-top: 10px;
-  font-family: Poppins;
   font-size: 15px; }
 
 textarea {
   border-width: 1px;
   padding: 5px;
   margin-top: 10px;
-  font-family: Poppins;
   font-size: 15px; }
 
 .botonEnviar {
@@ -402,6 +397,7 @@ textarea {
     font-size: 20px; }
   .box__Principal__ContenedorPortafolio {
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center; }
   .box__Principal__ContenedorPortafolio__Imagen {
