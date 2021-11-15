@@ -19,6 +19,8 @@
     color: black; }
   .block__Header__Banner {
     width: 85%; }
+  .block__Header p {
+    font-size: 25px; }
 
 /*-------------------- Navbar --------------------*/
 .menu__Navbar {
