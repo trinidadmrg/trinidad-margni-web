@@ -11,19 +11,16 @@
 .block__Header {
     background-color: black;
     color: white;
-    padding: 5px;
+    padding: 0px;
     margin: 0px;
 
     &__Iconos {
-        height: 25px;
-        width: 25px;
+        margin: 5px;
+        height: 30px;
     }
 
     &__Textos {
         color: white;
-        padding: 0px;
-        margin: 0px;
-        font-size: 17px;
     }
 
     div a {
@@ -31,115 +28,91 @@
     }
 
     &__Banner {
-        display: flex;
-        background-color: black;
-        justify-content: center;
-        margin: 0px;
+        width: 85%;
     }
 }
 
 /*-------------------- Navbar --------------------*/
 
 .menu__Navbar {
-    list-style: none;
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 25px;
     font-family: Oswald;
     letter-spacing: 1px;
-
+    background-color: #FBD3E0;
+    margin: 0px;
+    font-size: 20px;
     &__Lista {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-flow: nowrap;
         text-align: center;
-
-        & li {
-            display: inline;
-            text-decoration: none;
-            margin-left: 5px;
-            margin-right: 5px;
-
-            & a {
-                color: black;
-                text-decoration: none;
-                text-align: center;
-            }
-
-            & a:hover {
-                transition: color 0.5s;
-                color: #FF629F;
-            }
-        }
-
+    }
+    &__Brand{
+        text-transform: uppercase;
+        font-size: 25px;
+        padding-right: 20px;
     }
 }
 
 /*-------------------- Main --------------------*/
 
 .box__Main {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: flex-start;
     background-color: white;
-    height: 700px;
     padding: 0px;
     margin: 0px;
 
-    &__box__Main__TextoMain {
+    &__TextoMain {
         font-size: 22px;
     }
 
-    &__ContenedorImagen {
+    &__Imagen {
+        width: 100%;
         height: 100%;
-        padding: 0px;
-        margin: 0px;
-
-        &__Imagen {
-            height: 100%;
-            border-right: solid black;
-            border-width: 2px;
-        }
-    }
-
-    &__SobreLaPagina {
-        display: flex;
-        margin-left: 30px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
     }
 }
 
 /*-------------------- Box 1 --------------------*/
 
+.titulo {
+        background-color: #FBD3E0;
+        padding: 0px;
+        margin-top: 20px;
+    }
+
+.Aptitudes {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 20px;
+    text-align: center;
+        & li {
+            list-style: none;
+            line-height: 2;
+        }
+}
+
+.boton {
+    border: solid black;
+    background-color: #EDBBCA;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    margin-top: 10px;
+    width: 300px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 25px;
+        
+}
+
+.boton:hover {
+    background-color: black;
+    border-color: #EDBBCA;
+    color: #EDBBCA;
+    
+}
+
+/*de aca tengo que cambiar*/
+
 .box__Principal {
     background-color: white;
-
-    &__Titulo {
-        background-color: #FBD3E0;
-        padding: 5px;
-    }
-
-    &__Aptitudes {
-        padding-top: 100px;
-        padding-bottom: 100px;
-        font-family: 'PT Sans Narrow', sans-serif;
-        font-size: 30px;
-    }
-
-    & li {
-        list-style: none;
-        line-height: 3;
-    }
 
     &__ContenedorCertificados {
         display: flex;
@@ -150,7 +123,7 @@
         justify-content: center;
 
         &__Certificado {
-            height: 400px;
+            max-height: 400px;
             border: solid $gris-principal;
             border-width: 2px;
             margin-top: 20px;
@@ -175,6 +148,9 @@
             border-width: 1px;
             padding-bottom: 10px;
             justify-content: space-around;
+            & a:hover {
+                color: #FF629F;
+            }
         }
 
         &__Imagen {
@@ -183,6 +159,7 @@
             border-width: 1px;
             width: 100%;
         }
+
         & p {
             text-align: center;
         }
@@ -191,27 +168,6 @@
             color: $gris-principal;
             font-size: 19px;
         }
-    }
-
-    &__boton {
-        border: solid #FF88AF;
-        background-color: #FF88AF;
-        color: white;
-        text-align: center;
-        display: inline-block;
-        margin-right: auto;
-        margin-left: auto;
-        padding: 15px;
-        font-size: 30px;
-        text-decoration: none;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        width: 300px;
-    }
-
-    &__boton:hover {
-        background-color: $gris-principal;
-        color: $rosa-primario;
     }
 
     &__SeccionesTexto {
@@ -274,18 +230,14 @@
     }
 }
 
+/*hasta aca tengo que cambiar*/
+
 /*-------------------- Footer --------------------*/
 
 .box__Footer {
     background-color: black;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
     height: 100%;
-    margin-top: 0px;
+    margin-top: 40px;
     padding: 30px;
     font-family: 'PT Sans Narrow', sans-serif;
 
@@ -415,10 +367,8 @@ form {
     font-size: 20px;
     font-family: Oswald;
     border-radius: 10px;
-    margin-top: 50px;
-    padding: 15px;
-    display: block;
-    padding: 100px;
+    width: 100%;
+    margin: 50px;
 }
 
 button {
@@ -462,261 +412,46 @@ textarea {
 
 /*-------------------------------------------------------- Media Query --------------------------------------------------------*/
 
-/* For Large Screens (max-width: 1366px)*/
+/*-----Breakpoints Index-----*/
+/*
+X-Small - None (max-width: 575px)
+Small - sm (max-width: 767px)
+Medium - md (max-width: 991px)
+Large - lg (max-width: 1999px)
+Extra large - xl (max-width: 1399px)
+Extra extra large - xxl (min-width: 1400px)
+*/
 
-@media only screen and (max-width: 1366px) {
-    .box__Main {
-        height: 500px;
-    }
+/*X-Small - None (max-width: 575px)*/
 
-    h1 {
-        font-size: 40px;
-    }
-
-    .box__Principal {
-        background-color: white;
-
-        &__Titulo {
-            background-color: #FBD3E0;
-            padding: 5px;
-        }
-
-        &__Aptitudes {
-            padding-top: 20px;
-            padding-bottom: 20px;
-            font-family: 'PT Sans Narrow', sans-serif;
-            font-size: 20px;
-        }
-
-        & li {
-            list-style: none;
-            line-height: 3;
-        }
-    }
-}
-
-/* For Small Screens (max-width: 1024px)*/
-
-@media only screen and (max-width: 1024px) {
-    .box__Main {
-        height: 400px;
-    }
-
-    h1 {
-        font-size: 30px;
-    }
-
-    h2 {
-        font-size: 25px;
-    }
-
-    p {
-        font-size: 20px;
-    }
-
-    .box__Principal {
-        background-color: white;
-
-        &__Titulo {
-            background-color: #FBD3E0;
-            padding: 5px;
-        }
-
-        &__Aptitudes {
-            padding-top: 20px;
-            padding-bottom: 20px;
-            font-family: 'PT Sans Narrow', sans-serif;
-            font-size: 20px;
-        }
-
-        & li {
-            list-style: none;
-            line-height: 3;
-        }
-    }
-}
-
-/* For iPads and Tablets (max-width: 768px)*/
-
-@media only screen and (max-width: 768px) {
-    .block__Header {
-        background-color: black;
-        color: white;
-        padding: 0px;
-        margin: 0px;
-
-        &__Banner {
-            display: flex;
-            width: 100%;
-            background-color: black;
-            justify-content: center;
-            margin: 0px;
-
-            & img {
-                width: 100%;
-                margin-top: 20px;
-            }
-        }
-    }
-
-    .box__Main {
-        display: flex;
-        flex-wrap: nowrap;
+/*Small - sm (max-width: 767px)*/
+@media only screen and (max-width: 767px) {
+    .box__Main{
         flex-direction: column-reverse;
-        justify-content: center;
         align-items: center;
-        align-content: center;
-        padding: 0px;
-        margin: 0px;
-        height: 100%;
-
-        &__ContenedorImagen {
-            height: 100%;
-            padding: 0px;
-            margin: 0px;
-            display: flex;
-            justify-content: center;
-
-            &__Imagen {
-                height: 500px;
-                border-right: none;
-            }
-        }
-
-        &__SobreLaPagina {
-            display: flex;
-            margin-left: 0px;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
-            align-items: center;
-            margin-top: 40px;
-        }
     }
-
-    p {
-        text-align: center;
+    .Aptitudes{
+        padding: 5px;
     }
-
-    .box__Principal {
-        background-color: white;
-
-        &__Titulo {
-            background-color: #FBD3E0;
-            padding: 5px;
-            margin-bottom: 30px;
-        }
-
-        &__Aptitudes {
-            padding-top: 0px;
-            padding-bottom: 0px;
-            font-family: 'PT Sans Narrow', sans-serif;
-            font-size: 20px;
-            & li {
-                list-style: none;
-                line-height: 2.5;
-                text-align: center;
-            }
-    }
-
-        &__ContenedorCertificados {
-            flex-direction: column;
-
-            &__Certificado {
-                height: 300px;
-                border: solid $gris-principal;
-                border-width: 2px;
-                margin-top: 20px;
-                margin-left: 3px;
-            }
-
-        &__ContenedorPortafolio {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-
-            &__Trabajos {
-                margin: 20px;
-                flex-wrap: nowrap;
-                border: solid $gris-principal;
-                border-width: 1px;
-                padding-bottom: 10px;
-                justify-content: space-around;
-                width: 457px;
-            }
-
-            &__Imagen {
-                margin-bottom: 10px;
-                border: solid $gris-principal;
-                border-width: 1px;
-                width: 100%;
-            }
-
-            &__LinkTexto {
-                color: $gris-principal;
-                font-size: 19px;
-            }
-        }
-    }
-}
-}
-    /* For Mobile Devices (max-width: 480px)*/
-
-    @media only screen and (max-width: 480px) {
-        .block__Header__Banner {
-            height: 90px;
-            & img {
-                margin-top: 10px;
-            }
-        }
-
-        .box__Principal {
-            &__Aptitudes {
-                        font-size: 18px;
-                        & li {
-                            list-style: none;
-                            line-height: 2;
-                        }
-                    }
-        &__Boton {
-            padding: 15px;
-            margin-top: 10px;
-            width: 200px;
-            font-size: 20px;
-        }
-            &__ContenedorCertificados {
-                flex-direction: column;
-    
-                &__Certificado {
-                    height: 200px;
-                    border: solid $gris-principal;
-                    border-width: 2px;
-                    margin-top: 20px;
-                    margin-left: 3px;
-                }
-            }
-            &__ContenedorPortafolio {
-                & h3 {
-                    font-size: 20px;
-                }
-
-                & p {
-                    text-align: center;
-                    font-size: 15px;
-                }
-        }
-
-    .box__Secundario__Contenedor__Boton {
-        padding: 15px;
-        margin-top: 10px;
-        width: 200px;
+    .boton{
         font-size: 20px;
+        width: 220px;
+    }
+    .box__Principal__ContenedorPortafolio {
+        h3{
+            font-size: 25px;
+        }
+        p{
+            font-size: 20px;
+        }
     }
 }
 
-form {
-    padding: 20px;
-}
+/*Medium - md (max-width: 991px)*/
 
-} 
+/*Large - lg (max-width: 1999px)*/
+
+/*Extra large - xl (max-width: 1399px)*/
+
+/*Extra extra large - xxl (min-width: 1400px)*/
+
