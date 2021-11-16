@@ -1,245 +1,474 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
 
     <!-------- Links del Documento -------->
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Trinidad Margni, portafolio de trabajos digitales.</title>
-    <meta name="description" content="Consulta de una manera más tangible los trabajos y proyectos reales que elaboré para diferentes empresas, instituciones e iniciativas, en marketing, producto y más.">
+    <meta
+      name="description"
+      content="Consulta de una manera más tangible los trabajos y proyectos reales que elaboré para diferentes empresas, instituciones e iniciativas, en marketing, producto y más."
+    />
     <link rel="shortcut icon" type="image/png" href="imagenes/favicon.png" />
-</head>
+  </head>
 
-<!-------- Estructura del Sitio -------->
+  <!-------- Estructura del Sitio -------->
 
-<body>
-
+  <body>
     <!-------- Header -------->
 
     <div class="sticky-top">
-        <section class="container-fluid block__Header">
-            <div class="row">
-                <div class="col d-flex justify-content-start align-items-center">
-                    <p class="block__Header__Textos">+54 9 11 5163-7105</p>
-                </div>
-                <div class="col d-flex justify-content-end  align-items-center">
-                    <a href="https://www.linkedin.com/in/trinidadmargni"> <img src="imagenes/LinkedIn.png" class="block__Header__Iconos" alt="logo de LinkedIn"> </a>
-                    <a href="https://www.instagram.com/trinieninternet"> <img src="imagenes/Instagram.png" class="block__Header__Iconos" alt="logo de Instagram"> </a>
-                    <a href="https://www.facebook.com/trinidadmargni"> <img src="imagenes/Facebook.png" class="block__Header__Iconos" alt="logo de Facebook"> </a>
-                    <a href="https://twitter.com/trinidadmargni"> <img src="imagenes/Twitter.png" class="block__Header__Iconos" alt="logo de Twitter"> </a>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <img src="/imagenes/bannerPortafolio.jpg" class="block__Header__Banner" alt="Trinidad Margni, sección Portafolio.">
-            </div>
-        </section>
+      <section class="container-fluid block__Header">
+        <div class="row">
+          <div class="col d-flex justify-content-start align-items-center">
+            <p class="block__Header__Textos">+54 9 11 5163-7105</p>
+          </div>
+          <div class="col d-flex justify-content-end align-items-center">
+            <a
+              href="https://www.linkedin.com/in/trinidadmargni"
+              target="_blank"
+            >
+              <img
+                src="imagenes/LinkedIn.png"
+                class="block__Header__Iconos"
+                alt="logo de LinkedIn"
+              />
+            </a>
+            <a href="https://www.instagram.com/trinieninternet" target="_blank">
+              <img
+                src="imagenes/Instagram.png"
+                class="block__Header__Iconos"
+                alt="logo de Instagram"
+              />
+            </a>
+            <a href="https://www.facebook.com/trinidadmargni" target="_blank">
+              <img
+                src="imagenes/Facebook.png"
+                class="block__Header__Iconos"
+                alt="logo de Facebook"
+              />
+            </a>
+            <a href="https://twitter.com/trinidadmargni" target="_blank">
+              <img
+                src="imagenes/Twitter.png"
+                class="block__Header__Iconos"
+                alt="logo de Twitter"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <img
+            src="/imagenes/bannerPortafolio.jpg"
+            class="block__Header__Banner"
+            alt="Trinidad Margni, sección Portafolio."
+          />
+        </div>
+      </section>
 
-        <!-------- Navbar -------->
+      <!-------- Navbar -------->
 
-        <section class="container-fluid sinEspacios">
-            <nav class="navbar navbar-expand-lg navbar-light menu__Navbar">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <ul class="navbar-nav mx-auto mt-2 mt-lg-0 menu__Navbar__Lista">
-                        <li class="nav-item d-flex align-items-center pr-2">
-                            <a class="navbar-brand menu__Navbar__Brand m-0 p-0 " href="index.html">Trinidad Margni</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="curriculum.html">Curriculum <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="certificaciones.html">Certificaciones <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html">Portafolio <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="recursosgratis.html">Recursos<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto <span class="sr-only">(current)</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </section>
+      <section class="container-fluid sinEspacios">
+        <nav class="navbar navbar-expand-lg navbar-light menu__Navbar">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav mx-auto mt-2 mt-lg-0 menu__Navbar__Lista">
+              <li class="nav-item d-flex align-items-center pr-2">
+                <a
+                  class="navbar-brand menu__Navbar__Brand m-0 p-0"
+                  href="index.html"
+                  >Trinidad Margni</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"
+                  >Inicio <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="curriculum.html"
+                  >Curriculum <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="certificaciones.html"
+                  >Certificaciones <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html"
+                  >Portafolio <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="recursosgratis.html"
+                  >Recursos<span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html"
+                  >Contacto <span class="sr-only">(current)</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </section>
     </div>
 
     <!-------- Main -------->
 
     <section class="container-fluid sinEspacios">
-        <div class="row box__Main justify-content-center">
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-7 col-7 sinEspacios">
-                <img class="img-fluid box__Main__Imagen" src="/imagenes/imagenTrinidadPortafolio.jpg">
-            </div>
-            <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-8 col-sm-12 col-12 d-flex flex-column justify-content-center align-items-start">
-                <h1>Mi Portafolio</h1>
-                <h2>Trayectoria Profesional</h2>
-                <p class="box__Main__TextoMain"> En este apartado, podrás vislumbrar los diferentes trabajos que he ido realizando a lo largo del tiempo en mis diferentes áreas de interés.</p>
-            </div>
+      <div class="row box__Main justify-content-center">
+        <div
+          class="
+            col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-7 col-7
+            sinEspacios
+          "
+        >
+          <img
+            class="img-fluid box__Main__Imagen"
+            src="/imagenes/imagenTrinidadPortafolio.jpg"
+          />
         </div>
+        <div
+          class="
+            col-xxl-9 col-xl-9 col-lg-9 col-md-8 col-sm-12 col-12
+            d-flex
+            flex-column
+            justify-content-center
+            align-items-start
+          "
+        >
+          <h1>Mi Portafolio</h1>
+          <h2>Trayectoria Profesional</h2>
+          <p class="box__Main__TextoMain">
+            En este apartado, podrás vislumbrar los diferentes trabajos que he
+            ido realizando a lo largo del tiempo en mis diferentes áreas de
+            interés.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-------- Box 1 -------->
 
     <section class="container-fluid">
-        <div class="row titulo justify-content-center">
-            <h3>Mis Trabajos Realizados</h3>
-        </div>
-        <div class="row justify-content-center box__Principal__ContenedorPortafolio">
-            <div class="box__Principal__ContenedorPortafolio">
-                <div class="box__Principal__ContenedorPortafolio__Trabajos">
-                    <a href="https://drive.google.com/file/d/1Aes3wuri8qJB-PFfzhi4GhMp6WKWFoUL/view"><img src="imagenes/Plan-de-Marketing-FMG.jpg" class="box__Principal__ContenedorPortafolio__Imagen" alt="Portafolio, Plan de Marketing Digital FMG"></a>
-                    <h3><b>Plan de Marketing Digital</b></h3>
-                    <p>Para FMG (Franchise Master Group)</p>
-                    <div class="d-flex justify-content-center">
-                        <a href="https://drive.google.com/file/d/1Aes3wuri8qJB-PFfzhi4GhMp6WKWFoUL/view" class="box__Principal__ContenedorPortafolio__LinkTexto ">Clickear Aquí</a>
-                    </div>
-                </div>
-                <div class="box__Principal__ContenedorPortafolio">
-                    <div class="box__Principal__ContenedorPortafolio__Trabajos">
-                        <a href="https://drive.google.com/file/d/1IvaD1hFOVomRkkFp4gL-Xjbs-4miwgXy/view"><img src="imagenes/Plan-de-Comunicacion-Institucional-CESCOS.jpg" class="box__Principal__ContenedorPortafolio__Imagen" alt="Portafolio, Plan de Comunicación Institucional CESCOS"></a>
-                        <h3><b>Plan de Comunicación Institucional</b></h3>
-                        <p>Para CESCOS (Centro para el Estudio de las Sociedades Abiertas)</p>
-                        <div class="d-flex justify-content-center">
-                            <a href="https://drive.google.com/file/d/1IvaD1hFOVomRkkFp4gL-Xjbs-4miwgXy/view" class="box__Principal__ContenedorPortafolio__LinkTexto ">Clickear Aquí</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="box__Principal__ContenedorPortafolio">
-                    <div class="box__Principal__ContenedorPortafolio__Trabajos">
-                        <a href="https://drive.google.com/file/d/1LKtH73BAGc6EgFWiKO1u_y_AwirYrfG0/view"><img src="imagenes/Calendario de Contenidos Snappy.jpg" class="box__Principal__ContenedorPortafolio__Imagen" alt="Portafolio, Calendario de Contenidos"></a>
-                        <h3><b>Calendario de Contenidos</b></h3>
-                        <p>Para Snappy Commerce</p>
-                        <div class="d-flex justify-content-center">
-                            <a href="https://drive.google.com/file/d/1LKtH73BAGc6EgFWiKO1u_y_AwirYrfG0/view" class="box__Principal__ContenedorPortafolio__LinkTexto">Clickear Aquí</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="box__Principal__ContenedorPortafolio">
-                    <div class="box__Principal__ContenedorPortafolio__Trabajos">
-                        <a href="https://drive.google.com/file/d/1ErAHmzMao3ZKNxW32OEMvfMBQgV_YPF_/view"><img src="imagenes/Estrategia de Crecimiento Monpetit.jpg" class="box__Principal__ContenedorPortafolio__Imagen" alt="Portafolio, Estrategia de Crecimiento Monpetit"></a>
-                        <h3><b>Estrategia de Crecimiento</b></h3>
-                        <p>Para Monpetit Space</p>
-                        <div class="d-flex justify-content-center">
-                            <a href="https://drive.google.com/file/d/1ErAHmzMao3ZKNxW32OEMvfMBQgV_YPF_/view" class="box__Principal__ContenedorPortafolio__LinkTexto">Clickear Aquí</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="box__Principal__ContenedorPortafolio">
-                    <div class="box__Principal__ContenedorPortafolio__Trabajos">
-                        <a href="https://drive.google.com/file/d/1QKCqoOK-6pqOvBHDv66Qee2ktpyKPBew/view"><img src="imagenes/Project-Plan-Google-Project-Management.jpg" class="box__Principal__ContenedorPortafolio__Imagen" alt="Portafolio, Project Plan Google"></a>
-                        <h3><b>Project Plan</b></h3>
-                        <p>Para prácticas del programa Google's Project Management</p>
-                        <div class="d-flex justify-content-center">
-                            <a href="https://drive.google.com/file/d/1QKCqoOK-6pqOvBHDv66Qee2ktpyKPBew/view" class="box__Principal__ContenedorPortafolio__LinkTexto">Clickear Aquí</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="box__Principal__ContenedorPortafolio">
-                    <div class="box__Principal__ContenedorPortafolio__Trabajos">
-                        <a href="https://drive.google.com/file/d/1WvY74SnwopuulnERuAoUrhpqZuUfJ14W/view"><img src="imagenes/MVP-Product-Management-Snappy.jpg" class="box__Principal__ContenedorPortafolio__Imagen" alt="Portafolio, Producto Mínimo Viable"></a>
-                        <h3><b>Minimum Viable Product (MPV)</b></h3>
-                        <p>Para Snappy Commerce y Coderhouse</p>
-                        <div class="d-flex justify-content-center">
-                            <a href="https://drive.google.com/file/d/1WvY74SnwopuulnERuAoUrhpqZuUfJ14W/view" class="box__Principal__ContenedorPortafolio__LinkTexto">Clickear Aquí</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="box__Principal__ContenedorPortafolio">
-                    <div class="box__Principal__ContenedorPortafolio__Trabajos">
-                        <a href="https://drive.google.com/file/d/1h-VmFoUFILAP-9rv6ZFSiUtMAn1WoSkR/view"><img src="imagenes/Proyecto-Para-Comercio-Electrónico.jpg" class="box__Principal__ContenedorPortafolio__Imagen" alt="Portafolio, Proyecto Comercio Electrónico"></a>
-                        <h3><b>Proyecto de Comercio Electrónico</b></h3>
-                        <p>Para prácticas en CoderHouse</p>
-                        <div class="d-flex justify-content-center">
-                            <a href="https://drive.google.com/file/d/1h-VmFoUFILAP-9rv6ZFSiUtMAn1WoSkR/view" class="box__Principal__ContenedorPortafolio__LinkTexto">Clickear Aquí</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="box__Principal__ContenedorPortafolio">
-                    <div class="box__Principal__ContenedorPortafolio__Trabajos">
-                        <a href="https://blog.snappycommerce.io/"><img src="imagenes/Redacciones-Trinidad-Margni.jpg" class="box__Principal__ContenedorPortafolio__Imagen" alt="Portafolio, Redacciones Periodísticas y Empresariales"></a>
-                        <h3><b>Redacciones</b></h3>
-                        <p>Para varias empresas y propósitos</p>
-                        <div class="d-flex justify-content-center">
-                            <a href="https://blog.snappycommerce.io/" class="box__Principal__ContenedorPortafolio__LinkTexto">Clickear Aquí</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="box__Principal__ContenedorPortafolio">
-                    <div class="box__Principal__ContenedorPortafolio__Trabajos">
-                        <a href="https://drive.google.com/file/d/1hpgvA7jqcGUj2-Ymi2v4GOTQQ5uDuVhk/view"><img src="imagenes/SEO-Plan-Snappy.jpg" class="box__Principal__ContenedorPortafolio__Imagen" alt="Portafolio, Plan de Optimización en Motores de Búsqueda, SEO"></a>
-                        <h3><b>Search Engine Optimizacion (SEO)</b></h3>
-                        <p>Para Snappy Commerce y Coderhouse</p>
-                        <div class="d-flex justify-content-center">
-                            <a href="https://drive.google.com/file/d/1hpgvA7jqcGUj2-Ymi2v4GOTQQ5uDuVhk/view" class="box__Principal__ContenedorPortafolio__LinkTexto">Clickear Aquí</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="box__Principal__ContenedorPortafolio">
-                    <div class="box__Principal__ContenedorPortafolio__Trabajos">
-                        <img src="imagenes/Trinidad-Margni-otros-trabajos.jpg" class="box__Principal__ContenedorPortafolio__Imagen" alt="Portafolio, Otros trabajos">
-                        <h3><b>Otro tipo de trabajos</b></h3>
-                        <p>Para solicitar más ejemplos, comunicarse por correo electrónico</p>
-                        <div class="d-flex justify-content-center">
-                            <a href="mailto:trinidadmargni@gmail.com" class="box__Principal__ContenedorPortafolio__LinkTexto">trinidadmargni@gmail.com</a>
-                        </div>
-                    </div>
-                </div>
+      <div class="row titulo justify-content-center">
+        <h3>Mis Trabajos Realizados</h3>
+      </div>
+      <div
+        class="row justify-content-center box__Principal__ContenedorPortafolio"
+      >
+        <div class="box__Principal__ContenedorPortafolio">
+          <div class="box__Principal__ContenedorPortafolio__Trabajos">
+            <a
+              href="https://drive.google.com/file/d/1Aes3wuri8qJB-PFfzhi4GhMp6WKWFoUL/view"
+              target="_blank"
+              ><img
+                src="imagenes/Plan-de-Marketing-FMG.jpg"
+                class="box__Principal__ContenedorPortafolio__Imagen"
+                alt="Portafolio, Plan de Marketing Digital FMG"
+            /></a>
+            <h3><b>Plan de Marketing Digital</b></h3>
+            <p>Para FMG (Franchise Master Group)</p>
+            <div class="d-flex justify-content-center">
+              <a
+                href="https://drive.google.com/file/d/1Aes3wuri8qJB-PFfzhi4GhMp6WKWFoUL/view"
+                target="_blank"
+                class="box__Principal__ContenedorPortafolio__LinkTexto"
+                >Clickear Aquí</a
+              >
             </div>
+          </div>
+          <div class="box__Principal__ContenedorPortafolio">
+            <div class="box__Principal__ContenedorPortafolio__Trabajos">
+              <a
+                href="https://drive.google.com/file/d/1IvaD1hFOVomRkkFp4gL-Xjbs-4miwgXy/view"
+                target="_blank"
+                ><img
+                  src="imagenes/Plan-de-Comunicacion-Institucional-CESCOS.jpg"
+                  class="box__Principal__ContenedorPortafolio__Imagen"
+                  alt="Portafolio, Plan de Comunicación Institucional CESCOS"
+              /></a>
+              <h3><b>Plan de Comunicación Institucional</b></h3>
+              <p>
+                Para CESCOS (Centro para el Estudio de las Sociedades Abiertas)
+              </p>
+              <div class="d-flex justify-content-center">
+                <a
+                  href="https://drive.google.com/file/d/1IvaD1hFOVomRkkFp4gL-Xjbs-4miwgXy/view"
+                  target="_blank"
+                  class="box__Principal__ContenedorPortafolio__LinkTexto"
+                  >Clickear Aquí</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="box__Principal__ContenedorPortafolio">
+            <div class="box__Principal__ContenedorPortafolio__Trabajos">
+              <a
+                href="https://drive.google.com/file/d/1LKtH73BAGc6EgFWiKO1u_y_AwirYrfG0/view"
+                target="_blank"
+                ><img
+                  src="imagenes/Calendario de Contenidos Snappy.jpg"
+                  class="box__Principal__ContenedorPortafolio__Imagen"
+                  alt="Portafolio, Calendario de Contenidos"
+              /></a>
+              <h3><b>Calendario de Contenidos</b></h3>
+              <p>Para Snappy Commerce</p>
+              <div class="d-flex justify-content-center">
+                <a
+                  href="https://drive.google.com/file/d/1LKtH73BAGc6EgFWiKO1u_y_AwirYrfG0/view"
+                  target="_blank"
+                  class="box__Principal__ContenedorPortafolio__LinkTexto"
+                  >Clickear Aquí</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="box__Principal__ContenedorPortafolio">
+            <div class="box__Principal__ContenedorPortafolio__Trabajos">
+              <a
+                href="https://drive.google.com/file/d/1ErAHmzMao3ZKNxW32OEMvfMBQgV_YPF_/view"
+                target="_blank"
+                ><img
+                  src="imagenes/Estrategia de Crecimiento Monpetit.jpg"
+                  class="box__Principal__ContenedorPortafolio__Imagen"
+                  alt="Portafolio, Estrategia de Crecimiento Monpetit"
+              /></a>
+              <h3><b>Estrategia de Crecimiento</b></h3>
+              <p>Para Monpetit Space</p>
+              <div class="d-flex justify-content-center">
+                <a
+                  href="https://drive.google.com/file/d/1ErAHmzMao3ZKNxW32OEMvfMBQgV_YPF_/view"
+                  target="_blank"
+                  class="box__Principal__ContenedorPortafolio__LinkTexto"
+                  >Clickear Aquí</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="box__Principal__ContenedorPortafolio">
+            <div class="box__Principal__ContenedorPortafolio__Trabajos">
+              <a
+                href="https://drive.google.com/file/d/1QKCqoOK-6pqOvBHDv66Qee2ktpyKPBew/view"
+                target="_blank"
+                ><img
+                  src="imagenes/Project-Plan-Google-Project-Management.jpg"
+                  class="box__Principal__ContenedorPortafolio__Imagen"
+                  alt="Portafolio, Project Plan Google"
+              /></a>
+              <h3><b>Project Plan</b></h3>
+              <p>Para prácticas del programa Google's Project Management</p>
+              <div class="d-flex justify-content-center">
+                <a
+                  href="https://drive.google.com/file/d/1QKCqoOK-6pqOvBHDv66Qee2ktpyKPBew/view"
+                  target="_blank"
+                  class="box__Principal__ContenedorPortafolio__LinkTexto"
+                  >Clickear Aquí</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="box__Principal__ContenedorPortafolio">
+            <div class="box__Principal__ContenedorPortafolio__Trabajos">
+              <a
+                href="https://drive.google.com/file/d/1WvY74SnwopuulnERuAoUrhpqZuUfJ14W/view"
+                target="_blank"
+                ><img
+                  src="imagenes/MVP-Product-Management-Snappy.jpg"
+                  class="box__Principal__ContenedorPortafolio__Imagen"
+                  alt="Portafolio, Producto Mínimo Viable"
+              /></a>
+              <h3><b>Minimum Viable Product (MPV)</b></h3>
+              <p>Para Snappy Commerce y Coderhouse</p>
+              <div class="d-flex justify-content-center">
+                <a
+                  href="https://drive.google.com/file/d/1WvY74SnwopuulnERuAoUrhpqZuUfJ14W/view"
+                  target="_blank"
+                  class="box__Principal__ContenedorPortafolio__LinkTexto"
+                  >Clickear Aquí</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="box__Principal__ContenedorPortafolio">
+            <div class="box__Principal__ContenedorPortafolio__Trabajos">
+              <a
+                href="https://drive.google.com/file/d/1h-VmFoUFILAP-9rv6ZFSiUtMAn1WoSkR/view"
+                target="_blank"
+                ><img
+                  src="imagenes/Proyecto-Para-Comercio-Electrónico.jpg"
+                  class="box__Principal__ContenedorPortafolio__Imagen"
+                  alt="Portafolio, Proyecto Comercio Electrónico"
+              /></a>
+              <h3><b>Proyecto de Comercio Electrónico</b></h3>
+              <p>Para prácticas en CoderHouse</p>
+              <div class="d-flex justify-content-center">
+                <a
+                  href="https://drive.google.com/file/d/1h-VmFoUFILAP-9rv6ZFSiUtMAn1WoSkR/view"
+                  target="_blank"
+                  class="box__Principal__ContenedorPortafolio__LinkTexto"
+                  >Clickear Aquí</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="box__Principal__ContenedorPortafolio">
+            <div class="box__Principal__ContenedorPortafolio__Trabajos">
+              <a href="https://blog.snappycommerce.io/" target="_blank"
+                ><img
+                  src="imagenes/Redacciones-Trinidad-Margni.jpg"
+                  class="box__Principal__ContenedorPortafolio__Imagen"
+                  alt="Portafolio, Redacciones Periodísticas y Empresariales"
+              /></a>
+              <h3><b>Redacciones</b></h3>
+              <p>Para varias empresas y propósitos</p>
+              <div class="d-flex justify-content-center">
+                <a
+                  href="https://blog.snappycommerce.io/"
+                  target="_blank"
+                  class="box__Principal__ContenedorPortafolio__LinkTexto"
+                  >Clickear Aquí</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="box__Principal__ContenedorPortafolio">
+            <div class="box__Principal__ContenedorPortafolio__Trabajos">
+              <a
+                href="https://drive.google.com/file/d/1hpgvA7jqcGUj2-Ymi2v4GOTQQ5uDuVhk/view"
+                target="_blank"
+                ><img
+                  src="imagenes/SEO-Plan-Snappy.jpg"
+                  class="box__Principal__ContenedorPortafolio__Imagen"
+                  alt="Portafolio, Plan de Optimización en Motores de Búsqueda, SEO"
+              /></a>
+              <h3><b>Search Engine Optimizacion (SEO)</b></h3>
+              <p>Para Snappy Commerce y Coderhouse</p>
+              <div class="d-flex justify-content-center">
+                <a
+                  href="https://drive.google.com/file/d/1hpgvA7jqcGUj2-Ymi2v4GOTQQ5uDuVhk/view"
+                  target="_blank"
+                  class="box__Principal__ContenedorPortafolio__LinkTexto"
+                  >Clickear Aquí</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="box__Principal__ContenedorPortafolio">
+            <div class="box__Principal__ContenedorPortafolio__Trabajos">
+              <img
+                src="imagenes/Trinidad-Margni-otros-trabajos.jpg"
+                class="box__Principal__ContenedorPortafolio__Imagen"
+                alt="Portafolio, Otros trabajos"
+              />
+              <h3><b>Otro tipo de trabajos</b></h3>
+              <p>
+                Para solicitar más ejemplos, comunicarse por correo electrónico
+              </p>
+              <div class="d-flex justify-content-center">
+                <a
+                  href="mailto:trinidadmargni@gmail.com"
+                  target="_blank"
+                  class="box__Principal__ContenedorPortafolio__LinkTexto"
+                  >trinidadmargni@gmail.com</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-------- Footer -------->
 
     <footer class="container-fluid box__Footer">
-        <div class="row sinEspacios">
-            <div class="col">
-                <ul class="box__Footer__Lista">
-                    <li> <a href="index.html">Inicio</a></li>
-                    <li> <a href="curriculum.html">Curriculum</a></li>
-                    <li> <a href="certificaciones.html">Certificaciones</a></li>
-                    <li> <a href="portfolio.html">Portafolio</a></li>
-                    <li> <a href="recursosgratis.html">Recursos Gratis</a></li>
-                    <li> <a href="contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="col">
-                <div class="row d-flex justify-content-end">
-                    <a href="https://www.linkedin.com/in/trinidadmargni"> <img src="imagenes/LinkedIn.png" alt="logo de LinkedIn"> </a>
-                    <a href="https://www.instagram.com/trinieninternet"> <img src="imagenes/Instagram.png" alt="logo de Instagram"> </a>
-                </div>
-                <div class="row d-flex justify-content-end">
-                    <a href="https://www.facebook.com/trinidadmargni"> <img src="imagenes/Facebook.png" alt="logo de Facebook"> </a>
-                    <a href="https://twitter.com/trinidadmargni"> <img src="imagenes/Twitter.png" alt="logo de Twitter">
-                    </a>
-                </div>
-            </div>
+      <div class="row sinEspacios">
+        <div class="col">
+          <ul class="box__Footer__Lista">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="curriculum.html">Curriculum</a></li>
+            <li><a href="certificaciones.html">Certificaciones</a></li>
+            <li><a href="portfolio.html">Portafolio</a></li>
+            <li><a href="recursosgratis.html">Recursos Gratis</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
         </div>
+        <div class="col">
+          <div class="row d-flex justify-content-end">
+            <a
+              href="https://www.linkedin.com/in/trinidadmargni"
+              target="_blank"
+            >
+              <img src="imagenes/LinkedIn.png" alt="logo de LinkedIn" />
+            </a>
+            <a href="https://www.instagram.com/trinieninternet" target="_blank">
+              <img src="imagenes/Instagram.png" alt="logo de Instagram" />
+            </a>
+          </div>
+          <div class="row d-flex justify-content-end">
+            <a href="https://www.facebook.com/trinidadmargni" target="_blank">
+              <img src="imagenes/Facebook.png" alt="logo de Facebook" />
+            </a>
+            <a href="https://twitter.com/trinidadmargni" target="_blank">
+              <img src="imagenes/Twitter.png" alt="logo de Twitter" />
+            </a>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <!-------- Cierre -------->
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
-</body>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
