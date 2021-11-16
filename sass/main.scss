@@ -30,23 +30,36 @@
     &__Banner {
         width: 85%;
     }
+
     p {
-        font-size: 25px;
+        font-size: 22px;
     }
 }
 
 /*-------------------- Navbar --------------------*/
 
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+
+    &:hover {
+        color: $rosa-fuerte;
+        transition: color 0.3s;
+    }
+}
+
 .menu__Navbar {
+
     font-family: Oswald;
     letter-spacing: 1px;
-    background-color: #FBD3E0;
+    background-color: $rosa-primario;
     margin: 0px;
     font-size: 20px;
+
     &__Lista {
         text-align: center;
     }
-    &__Brand{
+
+    &__Brand {
         text-transform: uppercase;
         font-size: 25px;
         padding-right: 20px;
@@ -73,10 +86,10 @@
 /*-------------------- Box 1 --------------------*/
 
 .titulo {
-        background-color: #FBD3E0;
-        padding: 0px;
-        margin-top: 20px;
-    }
+    background-color: $rosa-primario;
+    padding: 0px;
+    margin-top: 20px;
+}
 
 .Aptitudes {
     padding-top: 100px;
@@ -84,15 +97,16 @@
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 20px;
     text-align: center;
-        & li {
-            list-style: none;
-            line-height: 2;
-        }
+
+    & li {
+        list-style: none;
+        line-height: 2;
+    }
 }
 
 .boton {
     border: solid black;
-    background-color: #EDBBCA;
+    background-color: $rosa-primario;
     color: black;
     text-align: center;
     display: inline-block;
@@ -102,17 +116,16 @@
     width: 300px;
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 25px;
-        
+
 }
 
 .boton:hover {
     background-color: black;
-    border-color: #EDBBCA;
-    color: #EDBBCA;
-    
-}
+    border-color: $rosa-primario;
+    color: $rosa-primario;
+    transition: color 0.7s;
 
-/*de aca tengo que cambiar*/
+}
 
 .box__Principal {
     background-color: white;
@@ -127,14 +140,15 @@
 
         &__Certificado {
             max-height: 400px;
-            border: solid $gris-principal;
+            border: solid black;
             border-width: 2px;
             margin-top: 20px;
             margin-left: 3px;
         }
 
         &__Certificado:hover {
-            transform: scale(1.2, 1.2)
+            transform: scale(1.2, 1.2);
+            transition: transform 0.3s;
         }
     }
 
@@ -147,18 +161,20 @@
         &__Trabajos {
             margin: 20px;
             flex-wrap: nowrap;
-            border: solid $gris-principal;
+            border: solid black;
             border-width: 1px;
             padding-bottom: 10px;
             justify-content: space-around;
+
             & a:hover {
-                color: #FF629F;
+                color: $rosa-fuerte;
+                transition: color 0.3s;
             }
         }
 
         &__Imagen {
             margin-bottom: 10px;
-            border: solid $gris-principal;
+            border: solid black;
             border-width: 1px;
             width: 100%;
         }
@@ -168,13 +184,12 @@
         }
 
         &__LinkTexto {
-            color: $gris-principal;
+            color: black;
             font-size: 19px;
         }
     }
 
     &__SeccionesTexto {
-        border-bottom: solid $bordo-principal;
         border-width: 1px;
         margin-bottom: 0px;
         padding-bottom: 50px;
@@ -184,7 +199,8 @@
     }
 
     div a:hover {
-        color: #FF629F;
+        color: $rosa-fuerte;
+        transition: color 0.3s;
     }
 }
 
@@ -199,7 +215,7 @@
     margin: 0px;
 
     &__Titulo {
-        background-color: #FBD3E0;
+        background-color: $rosa-primario;
         padding: 5px;
         margin: 0px;
         margin-top: 10px;
@@ -211,7 +227,7 @@
 
         &__Boton {
             border: solid black;
-            background-color: #EDBBCA;
+            background-color: $rosa-primario;
             color: black;
             text-align: center;
             display: inline-block;
@@ -227,13 +243,11 @@
 
         &__Boton:hover {
             background-color: black;
-            border-color: #EDBBCA;
-            color: #EDBBCA;
+            border-color: $rosa-primario;
+            color: $rosa-primario;
         }
     }
 }
-
-/*hasta aca tengo que cambiar*/
 
 /*-------------------- Footer --------------------*/
 
@@ -282,7 +296,8 @@
     }
 
     &__Lista a:hover {
-        color: #FF629F;
+        color: $rosa-fuerte;
+        transition: color 0.3s;
     }
 }
 
@@ -309,7 +324,7 @@ h1 {
 }
 
 h2 {
-    color: #EDBBCA;
+    color: $rosa-primario;
     text-align: center;
     font-family: Oswald;
     text-transform: uppercase;
@@ -325,7 +340,7 @@ h3 {
 }
 
 p {
-    color: $gris-principal;
+    color: black;
     font-size: map-get($tamaños-fuentes, "chica");
     line-height: 1.6;
     letter-spacing: normal;
@@ -334,7 +349,7 @@ p {
 }
 
 pr {
-    color: $gris-principal;
+    color: black;
     font-size: map-get($tamaños-fuentes, "media");
 }
 
@@ -344,20 +359,6 @@ pr {
 
 .sinEspacios {
     @include espaciosCajas(0px, 0px)
-}
-
-.fondoRosa {
-    background-color: #EDBBCA;
-}
-
-.fondoOscuro {
-    background-color: $gris-principal;
-}
-
-.fondoClaro {
-    background-color: white;
-    margin-bottom: 50px;
-    margin-top: 50px;
 }
 
 legend {
@@ -381,12 +382,12 @@ button {
 fieldset {
     border: none;
     font-weight: bold;
-    color: $rosa-primario;
+    color: $rosa-fuerte;
 }
 
 label {
     font-weight: normal;
-    color: $gris-principal;
+    color: black;
 }
 
 input {
@@ -403,16 +404,6 @@ textarea {
     font-size: 15px;
 }
 
-.botonEnviar {
-    background-color: $rosa-primario;
-    border: solid #FF629F;
-    color: white;
-    font-size: 15px;
-    margin-top: 10px;
-    padding: 5px;
-    display: inline-block;
-}
-
 /*-------------------------------------------------------- Media Query --------------------------------------------------------*/
 
 /*-----Breakpoints Index-----*/
@@ -425,36 +416,45 @@ Extra large - xl (max-width: 1399px)
 Extra extra large - xxl (min-width: 1400px)
 */
 
-/*X-Small - None (max-width: 575px)*/
-
 /*Small - sm (max-width: 767px)*/
+
 @media only screen and (max-width: 767px) {
-    .box__Main{
+    .box__Main {
+        display: flex;
         flex-direction: column-reverse;
+        justify-content: center;
+        align-content: center;
         align-items: center;
+
+        &__TextoMain {
+            text-align: center;
+        }
+
+        & h1 {
+            align-self: center;
+        }
+
+        & h2 {
+            align-self: center;
+        }
     }
-    .Aptitudes{
+
+    .Aptitudes {
         padding: 5px;
     }
-    .boton{
+
+    .boton {
         font-size: 20px;
         width: 220px;
     }
+
     .box__Principal__ContenedorPortafolio {
-        h3{
+        h3 {
             font-size: 25px;
         }
-        p{
+
+        p {
             font-size: 20px;
         }
     }
 }
-
-/*Medium - md (max-width: 991px)*/
-
-/*Large - lg (max-width: 1999px)*/
-
-/*Extra large - xl (max-width: 1399px)*/
-
-/*Extra extra large - xxl (min-width: 1400px)*/
-
