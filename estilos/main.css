@@ -446,4 +446,8 @@ Extra extra large - xxl (min-width: 1400px)
   .box__Principal__ContenedorPortafolio p {
     font-size: 20px;
   }
+  .block__Header__Logo {
+    margin: 5px;
+    height: 100px;
+  }
 }
