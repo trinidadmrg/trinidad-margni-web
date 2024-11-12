@@ -1,587 +1,258 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en">
 
-    <!-------- Links del Documento -------->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trinidad Margni - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/estilos/main.css">
+</head>
 
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="/estilos/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-------- Metadata -------->
-
-    <title>Portfolio - Trinidad Margni</title>
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="/imagenes/generales/favicon.png"
-    />
-    <meta
-      name="description"
-      content="In this section you can see my work done in different areas such as digital marketing, leadership, ecommerce and project management"
-    />
-  </head>
-
-  <body>
-    <!-------- Header -------->
-
-    <div class="sticky-top">
-      <section class="container-fluid block__Header">
-        <div class="row sinEspacios">
-          <div class="col d-flex justify-content-start align-items-center">
-            <p class="block__Header__Textos">+54 9 11 2579-5300</p>
-          </div>
-          <div class="col d-flex justify-content-end align-items-center">
-            <a href="https://www.linkedin.com/in/trinidadmargni"  target="_blank">
-              <img
-                src="/imagenes/generales/LinkedIn.png"
-                class="block__Header__Iconos"
-                alt="logo de LinkedIn"
-              />
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-------- Navbar -------->
-
-      <section class="container-fluid sinEspacios">
-        <nav class="navbar navbar-expand-lg navbar-light menu__Navbar">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a
-              class="navbar-brand menu__Navbar__Brand m-0 p-0"
-              href="/index.html"
-            >
-              <img
-                src="/imagenes/generales/TRINIDAD.png"
-                class="block__Header__Logo"
-                alt="logo de Trinidad Margni"
-            /></a>
-            <ul class="navbar-nav mx-auto mt-2 mt-lg-0 menu__Navbar__Lista">
-              <li class="nav-item d-flex align-items-center pr-2"></li>
-              <li class="nav-item">
-                <a class="nav-link" href="/index.html"
-                  >Home<span class="sr-only">(current)</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/resume.html"
-                  >Resume<span class="sr-only">(current)</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/certificates.html"
-                  >Certificates<span class="sr-only">(current)</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/portfolio.html"
-                  >Portfolio<span class="sr-only">(current)</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/contact.html"
-                  >Contact<span class="sr-only">(current)</span></a
-                >
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </section>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-content">
+      <img src="/imagenes/generales/banner_gray.png" alt="Logo" class="logo">
+      <div class="burger-menu" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="/index.html" >Home</a></li>
+        <li><a href="/pages/resume.html">Resume</a></li>
+        <li><a href="/pages/certifications.html">Certifications</a></li>
+        <li><a href="/pages/portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="/pages/contact.html">Contact</a></li>
+      </ul>
     </div>
+  </header>
 
-    <!-------- Main -------->
-
-    <div class="borderContainer">
-      <section class="container-fluid sinEspacios">
-        <div class="row box__Main justify-content-center">
-          <div
-            class="col-xxl-3 col-xl-2 col-lg-3 col-md-4 col-sm-7 col-7 sinEspacios"
-          >
-            <img
-              class="img-fluid box__Main__Imagen"
-              src="/imagenes/generales/Fourth.jpg"
-            />
-          </div>
-          <div
-            class="col-xxl-9 col-xl-10 col-lg-9 col-md-8 col-sm-12 col-12 d-flex flex-column justify-content-center align-items-start"
-          >
-            <h1>My Portfolio</h1>
-            <p class="box__Main__TextoMain">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <!-------- Box 1 -------->
-
-    <section class="container-fluid">
-      <!-------- Marketing Digital / Comunicaciones -------->
-
-      <div class="row titulo justify-content-center">
-        <h3>My Work Done in Digital Marketing / Communications</h3>
-      </div>
-      <div class="box__Principal__ContenedorPortafolio">
-        <div
-          class="row justify-content-center box__Principal__ContenedorPortafolio"
-        >
-          <div class="box__Principal__ContenedorPortafolio__Trabajos">
-            <a
-              href="https://drive.google.com/file/d/1Aes3wuri8qJB-PFfzhi4GhMp6WKWFoUL/view"
-              target="_blank"
-              ><img
-                src="/imagenes/portafolio/Plan-de-Marketing-FMG.jpg"
-                class="box__Principal__ContenedorPortafolio__Imagen"
-                alt="Portafolio, Plan de Marketing Digital FMG"
-            /></a>
-            <h3><b>Digital Marketing Plan</b></h3>
-            <p>For FMG (Franchise Master Group)</p>
-            <div class="d-flex justify-content-center">
-              <a
-                href="https://drive.google.com/file/d/1Aes3wuri8qJB-PFfzhi4GhMp6WKWFoUL/view"
-                target="_blank"
-                class="box__Principal__ContenedorPortafolio__LinkTexto"
-                >Click here</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="box__Principal__ContenedorPortafolio">
-          <div class="box__Principal__ContenedorPortafolio__Trabajos">
-            <a
-              href="https://drive.google.com/file/d/1IvaD1hFOVomRkkFp4gL-Xjbs-4miwgXy/view"
-              target="_blank"
-              ><img
-                src="/imagenes/portafolio/Plan-de-Comunicacion-Institucional-CESCOS.jpg"
-                class="box__Principal__ContenedorPortafolio__Imagen"
-                alt="Portafolio, Plan de Comunicación Institucional CESCOS"
-            /></a>
-            <h3><b>Institutional Communication Plan</b></h3>
-            <p>
-              For CESCOS (Center for the Study<br />
-              of Open Societies)
-            </p>
-            <div class="d-flex justify-content-center">
-              <a
-                href="https://drive.google.com/file/d/1IvaD1hFOVomRkkFp4gL-Xjbs-4miwgXy/view"
-                target="_blank"
-                class="box__Principal__ContenedorPortafolio__LinkTexto"
-                >Click here</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="box__Principal__ContenedorPortafolio">
-          <div class="box__Principal__ContenedorPortafolio__Trabajos">
-            <a
-              href="https://drive.google.com/file/d/1LKtH73BAGc6EgFWiKO1u_y_AwirYrfG0/view"
-              target="_blank"
-              ><img
-                src="/imagenes/portafolio/Calendario de Contenidos Snappy.jpg"
-                class="box__Principal__ContenedorPortafolio__Imagen"
-                alt="Portafolio, Calendario de Contenidos"
-            /></a>
-            <h3><b>Content Calendar</b></h3>
-            <p>For Snappy Commerce</p>
-            <div class="d-flex justify-content-center">
-              <a
-                href="https://drive.google.com/file/d/1LKtH73BAGc6EgFWiKO1u_y_AwirYrfG0/view"
-                target="_blank"
-                class="box__Principal__ContenedorPortafolio__LinkTexto"
-                >Click here</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="box__Principal__ContenedorPortafolio">
-          <div class="box__Principal__ContenedorPortafolio__Trabajos">
-            <a
-              href="https://drive.google.com/file/d/1ErAHmzMao3ZKNxW32OEMvfMBQgV_YPF_/view"
-              target="_blank"
-              ><img
-                src="/imagenes/portafolio/Estrategia de Crecimiento Monpetit.jpg"
-                class="box__Principal__ContenedorPortafolio__Imagen"
-                alt="Portafolio, Estrategia de Crecimiento Monpetit"
-            /></a>
-            <h3><b>Growth Strategy</b></h3>
-            <p>For Monpetit Space</p>
-            <div class="d-flex justify-content-center">
-              <a
-                href="https://drive.google.com/file/d/1ErAHmzMao3ZKNxW32OEMvfMBQgV_YPF_/view"
-                target="_blank"
-                class="box__Principal__ContenedorPortafolio__LinkTexto"
-                >Click here</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="box__Principal__ContenedorPortafolio">
-          <div class="box__Principal__ContenedorPortafolio__Trabajos">
-            <a href="https://blog.snappycommerce.io/" target="_blank"
-              ><img
-                src="/imagenes/portafolio/Redacciones-Trinidad-Margni.jpg"
-                class="box__Principal__ContenedorPortafolio__Imagen"
-                alt="Portafolio, Redacciones Periodísticas y Empresariales"
-            /></a>
-            <h3><b>Writings</b></h3>
-            <p>For various companies and purposes</p>
-            <div class="d-flex justify-content-center">
-              <a
-                href="https://blog.snappycommerce.io/"
-                target="_blank"
-                class="box__Principal__ContenedorPortafolio__LinkTexto"
-                >Click here</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="box__Principal__ContenedorPortafolio">
-          <div class="box__Principal__ContenedorPortafolio__Trabajos">
-            <a
-              href="https://drive.google.com/file/d/1hpgvA7jqcGUj2-Ymi2v4GOTQQ5uDuVhk/view"
-              target="_blank"
-              ><img
-                src="/imagenes/portafolio/SEO-Plan-Snappy.jpg"
-                class="box__Principal__ContenedorPortafolio__Imagen"
-                alt="Portafolio, Plan de Optimización en Motores de Búsqueda, SEO"
-            /></a>
-            <h3><b>Search Engine Optimizacion (SEO)</b></h3>
-            <p>For Snappy Commerce & Coderhouse</p>
-            <div class="d-flex justify-content-center">
-              <a
-                href="https://drive.google.com/file/d/1hpgvA7jqcGUj2-Ymi2v4GOTQQ5uDuVhk/view"
-                target="_blank"
-                class="box__Principal__ContenedorPortafolio__LinkTexto"
-                >Click here</a
-              >
-            </div>
-          </div>
+  <!-- Hero Section -->
+  <div class="container">
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">My Portfolio</h1>
+        <h2 class="hero-subtitle">Senior Project Manager</h2>
+        <p class="hero-description">Welcome to my Portfolio! Here you’ll find a selection of projects showcasing my experience in project management, marketing, and tech. From global email campaigns to web development initiatives.</p>
+        <div class="button-group">
+          <a href="/pages/certifications.html"><button class="hero-button">My Certifications</button></a>
+          <a href="/pages/contact.html"><button class="hero-button">Contact Me</button></a>
         </div>
       </div>
-
-      <!-------- Proyecto / Producto -------->
-
-      <div class="row titulo justify-content-center">
-        <h3>My Work Done in Project / Product Management</h3>
-      </div>
-      <div class="box__Principal__ContenedorPortafolio">
-        <div class="box__Principal__ContenedorPortafolio">
-          <div class="box__Principal__ContenedorPortafolio__Trabajos">
-            <a
-              href="https://drive.google.com/file/d/1QKCqoOK-6pqOvBHDv66Qee2ktpyKPBew/view"
-              target="_blank"
-              ><img
-                src="/imagenes/portafolio/Project-Plan-Google-Project-Management.jpg"
-                class="box__Principal__ContenedorPortafolio__Imagen"
-                alt="Portafolio, Project Plan Google"
-            /></a>
-            <h3><b>Project Plan</b></h3>
-            <p>
-              For practices of the Google's <br />Project Management program
-            </p>
-            <div class="d-flex justify-content-center">
-              <a
-                href="https://drive.google.com/file/d/1QKCqoOK-6pqOvBHDv66Qee2ktpyKPBew/view"
-                target="_blank"
-                class="box__Principal__ContenedorPortafolio__LinkTexto"
-                >Click here</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="box__Principal__ContenedorPortafolio">
-          <div class="box__Principal__ContenedorPortafolio__Trabajos">
-            <a
-              href="https://drive.google.com/file/d/1WvY74SnwopuulnERuAoUrhpqZuUfJ14W/view"
-              target="_blank"
-              ><img
-                src="/imagenes/portafolio/MVP-Product-Management-Snappy.jpg"
-                class="box__Principal__ContenedorPortafolio__Imagen"
-                alt="Portafolio, Producto Mínimo Viable"
-            /></a>
-            <h3><b>Minimum Viable Product (MPV)</b></h3>
-            <p>For Snappy Commerce & Coderhouse</p>
-            <div class="d-flex justify-content-center">
-              <a
-                href="https://drive.google.com/file/d/1WvY74SnwopuulnERuAoUrhpqZuUfJ14W/view"
-                target="_blank"
-                class="box__Principal__ContenedorPortafolio__LinkTexto"
-                >Click here</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-------- E-Commerce -------->
-
-      <div class="row titulo justify-content-center">
-        <h3>My Works Done in E-Commerce</h3>
-      </div>
-      <div class="box__Principal__ContenedorPortafolio">
-        <div class="box__Principal__ContenedorPortafolio">
-          <div class="box__Principal__ContenedorPortafolio__Trabajos">
-            <a
-              href="https://drive.google.com/file/d/1h-VmFoUFILAP-9rv6ZFSiUtMAn1WoSkR/view"
-              target="_blank"
-              ><img
-                src="/imagenes/portafolio/Proyecto-Para-Comercio-Electrónico.jpg"
-                class="box__Principal__ContenedorPortafolio__Imagen"
-                alt="Portafolio, Proyecto Comercio Electrónico"
-            /></a>
-            <h3><b>Electronic Commerce Project</b></h3>
-            <p>For internships at CoderHouse</p>
-            <div class="d-flex justify-content-center">
-              <a
-                href="https://drive.google.com/file/d/1h-VmFoUFILAP-9rv6ZFSiUtMAn1WoSkR/view"
-                target="_blank"
-                class="box__Principal__ContenedorPortafolio__LinkTexto"
-                >Click here</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-------- Desarrollo Web / Programación -------->
-
-      <div class="row titulo justify-content-center">
-        <h3>My Work Done in Web Development / Programming</h3>
-      </div>
-      <div class="box__Principal__ContenedorPortafolio">
-        <div class="box__Principal__ContenedorPortafolio">
-          <div class="box__Principal__ContenedorPortafolio__Trabajos">
-            <img
-              src="/imagenes/portafolio/Web Personal HTML y CSS.png"
-              class="box__Principal__ContenedorPortafolio__Imagen"
-              alt="Portafolio, Otros trabajos"
-            />
-            <h3><b>My personal website</b></h3>
-            <p>
-              Coded by myseld with HTML,<br />
-              CSS, SASS & Bootstrap
-            </p>
-            <div class="d-flex justify-content-center">
-              <a
-                href="https://www.trinidadmargni.com/"
-                target="_blank"
-                class="box__Principal__ContenedorPortafolio__LinkTexto"
-                >Click here</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="box__Principal__ContenedorPortafolio">
-          <div class="box__Principal__ContenedorPortafolio__Trabajos">
-            <img
-              src="/imagenes/portafolio/Proyecto JavaScript Vanilla.png"
-              class="box__Principal__ContenedorPortafolio__Imagen"
-              alt="Portafolio, Otros trabajos"
-            />
-            <h3>
-              <b>Vanilla JavaScript Project<br />(Outfit Generator)</b>
-            </h3>
-            <p>
-              Coded with Vanilla JavaScript<br />
-              Grant outfits based on <br />user requests.
-            </p>
-            <div class="d-flex justify-content-center">
-              <a
-                href="https://proyectojs-trinidadmargni.netlify.app/"
-                target="_blank"
-                class="box__Principal__ContenedorPortafolio__LinkTexto"
-                >Click here</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="box__Principal__ContenedorPortafolio">
-          <div class="box__Principal__ContenedorPortafolio__Trabajos">
-            <img
-              src="/imagenes/portafolio/Proyecto App de Clima JavaScript Vanilla.png"
-              class="box__Principal__ContenedorPortafolio__Imagen"
-              alt="Portafolio, Otros trabajos"
-            />
-            <h3>
-              <b>Vanilla JavaScript Project<br />(Weather App)</b>
-            </h3>
-            <p>
-              Coded with Vanilla JavaScript,<br />
-              grants the weather with a search engine and<br />
-              recognizes current location.
-            </p>
-            <div class="d-flex justify-content-center">
-              <a
-                href="https://weatherapp-trinidadmargni.netlify.app/"
-                target="_blank"
-                class="box__Principal__ContenedorPortafolio__LinkTexto"
-                >Click here</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="box__Principal__ContenedorPortafolio">
-          <div class="box__Principal__ContenedorPortafolio__Trabajos">
-            <img
-              src="/imagenes/portafolio/Proyecto App de Clima React JS.png"
-              class="box__Principal__ContenedorPortafolio__Imagen"
-              alt="Portafolio, Otros trabajos"
-            />
-            <h3>
-              <b>React JS Project <br />(Weather App)</b>
-            </h3>
-            <p>
-              Coded with React JS, a <br />improved version of the application
-              of <br />climate made in vanilla. It has a search engine<br />
-              and can determine current location.
-            </p>
-            <div class="d-flex justify-content-center">
-              <a
-                href="https://weatherapp-shecodes-2.netlify.app/"
-                target="_blank"
-                class="box__Principal__ContenedorPortafolio__LinkTexto"
-                >Click here</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="box__Principal__ContenedorPortafolio">
-          <div class="box__Principal__ContenedorPortafolio__Trabajos">
-            <img
-              src="/imagenes/portafolio/Proyecto ECommerce React JS.png"
-              class="box__Principal__ContenedorPortafolio__Imagen"
-              alt="Portafolio, Otros trabajos"
-            />
-            <h3>
-              <b
-                >React JS Project<br />
-                (e-Comemrce)</b
-              >
-            </h3>
-            <p>
-              Coded with React JS, is the simulation of <br />an ECommerce for
-              the sale of mystery boxes <br />
-              of books. It can go across the whole process of <br />a purchase
-              simulation.
-            </p>
-            <div class="d-flex justify-content-center">
-              <a
-                href="/"
-                target="_blank"
-                class="box__Principal__ContenedorPortafolio__LinkTexto"
-                >Click here</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-------- Otros -------->
-
-      <div class="row titulo justify-content-center">
-        <h3>Otros</h3>
-      </div>
-      <div class="box__Principal__ContenedorPortafolio">
-        <div class="box__Principal__ContenedorPortafolio">
-          <div class="box__Principal__ContenedorPortafolio__Trabajos">
-            <img
-              src="/imagenes/portafolio/Trinidad-Margni-otros-trabajos.jpg"
-              class="box__Principal__ContenedorPortafolio__Imagen"
-              alt="Portafolio, Otros trabajos"
-            />
-            <h3><b>Other types of jobs</b></h3>
-            <p>To request more examples, contact<br />by email</p>
-            <div class="d-flex justify-content-center">
-              <a
-                href="mailto:trinidadmargni@gmail.com"
-                target="_blank"
-                class="box__Principal__ContenedorPortafolio__LinkTexto"
-                >trinidadmargni@gmail.com</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
+      <img src="/imagenes/generales/Fifth.jpg" alt="Trinidad Margni - Project Manager" class="hero-image">
     </section>
+  </div>
 
-    <!-------- Footer -------->
-
-    <footer class="container-fluid box__Footer">
-      <div class="row sinEspacios">
-        <div class="col">
-          <ul class="box__Footer__Lista">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="/pages/resume.html">Resume</a></li>
-            <li><a href="/pages/certificates.html">Certificates</a></li>
-            <li><a href="/pages/portfolio.html">Portfolio</a></li>
-            <li><a href="/pages/contact.html">Contact</a></li>
-          </ul>
+ <!-- Portfolio Section -->
+<section class="portfolio-section">
+  <h2 class="portfolio-title">My Portfolio</h2>
+  
+  <!-- Digital Marketing / Communications Section -->
+  <h3 class="portfolio-category">My Work in Digital Marketing & Communications</h3>
+  <div class="portfolio-grid">
+    <!-- Portfolio Item 1 -->
+    <div class="portfolio-item">
+      <a href="https://drive.google.com/file/d/1Aes3wuri8qJB-PFfzhi4GhMp6WKWFoUL/view" target="_blank" class="portfolio-link">
+        <img src="/imagenes/portafolio/Plan-de-Marketing-FMG.jpg" alt="Digital Marketing Plan FMG" class="portfolio-image">
+        <div class="portfolio-overlay">
+          <h4>Digital Marketing Plan</h4>
+          <p>For FMG (Franchise Master Group)</p>
+          <span class="portfolio-button">Click Here</span>
         </div>
-        <div class="col">
-          <div class="row d-flex justify-content-end">
-            <a
-              href="https://www.linkedin.com/in/trinidadmargni"
-              target="_blank"
-            >
-              <img
-                src="/imagenes/generales/LinkedIn.png"
-                alt="logo de LinkedIn"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-      <p class="firma">Coded by Trinidad Margni, 2021</p>
-    </footer>
-    </footer>
+      </a>
+    </div>
 
-    <!-------- Scripts -------->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <!-- Portfolio Item 2 -->
+    <div class="portfolio-item">
+      <a href="https://drive.google.com/file/d/1IvaD1hFOVomRkkFp4gL-Xjbs-4miwgXy/view" target="_blank" class="portfolio-link">
+        <img src="/imagenes/portafolio/Plan-de-Comunicacion-Institucional-CESCOS.jpg" alt="Institutional Communication Plan CESCOS" class="portfolio-image">
+        <div class="portfolio-overlay">
+          <h4>Institutional Communication Plan</h4>
+          <p>For CESCOS (Center for the Study of Open Societies)</p>
+          <span class="portfolio-button">Click Here</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Portfolio Item 3 -->
+    <div class="portfolio-item">
+      <a href="https://drive.google.com/file/d/1LKtH73BAGc6EgFWiKO1u_y_AwirYrfG0/view" target="_blank" class="portfolio-link">
+        <img src="/imagenes/portafolio/Calendario de Contenidos Snappy.jpg" alt="Content Calendar for Snappy Commerce" class="portfolio-image">
+        <div class="portfolio-overlay">
+          <h4>Content Calendar</h4>
+          <p>For Snappy Commerce</p>
+          <span class="portfolio-button">Click Here</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Portfolio Item 4 -->
+    <!-- Deleted -->
+     
+    <!-- Portfolio Item 5 -->
+    <div class="portfolio-item">
+      <a href="https://blog.snappycommerce.io/" target="_blank" class="portfolio-link">
+        <img src="/imagenes/portafolio/Redacciones-Trinidad-Margni.jpg" alt="Writings for Snappy Commerce" class="portfolio-image">
+        <div class="portfolio-overlay">
+          <h4>Writings</h4>
+          <p>For various companies and purposes</p>
+          <span class="portfolio-button">Click Here</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Portfolio Item 6 -->
+    <div class="portfolio-item">
+      <a href="https://drive.google.com/file/d/1hpgvA7jqcGUj2-Ymi2v4GOTQQ5uDuVhk/view" target="_blank" class="portfolio-link">
+        <img src="/imagenes/portafolio/SEO-Plan-Snappy.jpg" alt="SEO Plan Snappy" class="portfolio-image">
+        <div class="portfolio-overlay">
+          <h4>Search Engine Optimization (SEO)</h4>
+          <p>For Snappy Commerce & Coderhouse</p>
+          <span class="portfolio-button">Click Here</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Project / Product Management Section -->
+  <h3 class="portfolio-category">My Work in Project / Product Management</h3>
+  <div class="portfolio-grid">
+    <!-- Portfolio Item 7 -->
+    <div class="portfolio-item">
+      <a href="https://drive.google.com/file/d/1QKCqoOK-6pqOvBHDv66Qee2ktpyKPBew/view" target="_blank" class="portfolio-link">
+        <img src="/imagenes/portafolio/Project-Plan-Google-Project-Management.jpg" alt="Project Plan Google Project Management" class="portfolio-image">
+        <div class="portfolio-overlay">
+          <h4>Project Plan</h4>
+          <p>For Google's Project Management Program</p>
+          <span class="portfolio-button">Click Here</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Portfolio Item 8 -->
+    <div class="portfolio-item">
+      <a href="https://drive.google.com/file/d/1WvY74SnwopuulnERuAoUrhpqZuUfJ14W/view" target="_blank" class="portfolio-link">
+        <img src="/imagenes/portafolio/MVP-Product-Management-Snappy.jpg" alt="Minimum Viable Product MPV Snappy" class="portfolio-image">
+        <div class="portfolio-overlay">
+          <h4>Minimum Viable Product (MPV)</h4>
+          <p>For Snappy Commerce & Coderhouse</p>
+          <span class="portfolio-button">Click Here</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- E-Commerce Section -->
+  <h3 class="portfolio-category">My Work in E-Commerce</h3>
+  <div class="portfolio-grid">
+    <!-- Portfolio Item 9 -->
+    <div class="portfolio-item">
+      <a href="https://drive.google.com/file/d/1h-VmFoUFILAP-9rv6ZFSiUtMAn1WoSkR/view" target="_blank" class="portfolio-link">
+        <img src="/imagenes/portafolio/Proyecto-Para-Comercio-Electrónico.jpg" alt="E-Commerce Project" class="portfolio-image">
+        <div class="portfolio-overlay">
+          <h4>Electronic Commerce Project</h4>
+          <p>For internships at CoderHouse</p>
+          <span class="portfolio-button">Click Here</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Web Development / Programming Section -->
+  <h3 class="portfolio-category">My Work in Web Development / Programming</h3>
+  <div class="portfolio-grid">
+    <!-- Portfolio Item 10 -->
+    <div class="portfolio-item">
+      <a href="https://www.trinidadmargni.com/" target="_blank" class="portfolio-link">
+        <img src="/imagenes/portafolio/Web Personal HTML y CSS.png" alt="My Personal Website" class="portfolio-image">
+        <div class="portfolio-overlay">
+          <h4>My Personal Website</h4>
+          <p>Coded with HTML, CSS, SASS & Bootstrap</p>
+          <span class="portfolio-button">Click Here</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Portfolio Item 11 -->
+    <div class="portfolio-item">
+      <a href="https://proyectojs-trinidadmargni.netlify.app/" target="_blank" class="portfolio-link">
+        <img src="/imagenes/portafolio/Proyecto JavaScript Vanilla.png" alt="Vanilla JavaScript Project (Outfit Generator)" class="portfolio-image">
+        <div class="portfolio-overlay">
+          <h4>Vanilla JavaScript Project (Outfit Generator)</h4>
+          <p>Grant outfits based on user requests</p>
+          <span class="portfolio-button">Click Here</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Portfolio Item 12 -->
+    <div class="portfolio-item">
+      <a href="https://weatherapp-trinidadmargni.netlify.app/" target="_blank" class="portfolio-link">
+        <img src="/imagenes/portafolio/Proyecto App de Clima JavaScript Vanilla.png" alt="Vanilla JavaScript Weather App" class="portfolio-image">
+        <div class="portfolio-overlay">
+          <h4>Vanilla JavaScript Weather App</h4>
+          <p>Weather app with a search engine & current location detection</p>
+          <span class="portfolio-button">Click Here</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Portfolio Item 13 -->
+    <div class="portfolio-item">
+      <a href="https://weatherapp-shecodes-2.netlify.app/" target="_blank" class="portfolio-link">
+        <img src="/imagenes/portafolio/Proyecto App de Clima React JS.png" alt="React JS Weather App" class="portfolio-image">
+        <div class="portfolio-overlay">
+          <h4>React JS Weather App</h4>
+          <p>Improved version with a search engine and current location</p>
+          <span class="portfolio-button">Click Here</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Portfolio Item 14 -->
+    <div class="portfolio-item">
+      <a href="/" target="_blank" class="portfolio-link">
+        <img src="/imagenes/portafolio/Proyecto ECommerce React JS.png" alt="React JS E-Commerce Project" class="portfolio-image">
+        <div class="portfolio-overlay">
+          <h4>React JS E-Commerce Project</h4>
+          <p>Simulating an e-commerce site for mystery book boxes</p>
+          <span class="portfolio-button">Click Here</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Resume Button -->
+  <div class="resume-button-container">
+    <a href="path/to/resume.html" class="resume-button">View My Resume</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <ul class="footer-links">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/pages/resume.html">Resume</a></li>
+      <li><a href="/pages/certifications.html">Certifications</a></li>
+      <li><a href="/pages/portfolio.html">Portfolio</a></li>
+      <li><a href="/pages/contact.html">Contact</a></li>
+    </ul>
+    <p class="footer-firm">Coded by Trinidad Margni, 2024</p>
+    <a href="https://www.linkedin.com/in/trinidadmargni" target="_blank" class="linkedin-button">in</a>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const navMenu = document.querySelector('.nav-menu');
+      navMenu.classList.toggle('show');
+    }
+  </script>
+  <script src="/main.js"></script>
+</body>
+
+
 </html>

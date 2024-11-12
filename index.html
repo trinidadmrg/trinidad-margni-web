@@ -1,236 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<!-- Meta Data -->
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-------- Links del Documento -------->
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="/estilos/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap" rel="stylesheet">
-
-    <!-------- Metadata -------->
-
-    <title>Trinidad Margni</title>
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="/imagenes/generales/favicon.png"
-    />
-    <meta name="description" content="Young digital talent interested in different areas of the business world and trained mainly in digital marketing, communications and management">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trinidad Margni - Project Manager</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos/main.css">
 </head>
 
 <body>
 
-    <!-------- Header -------->
+<!-- Header -->
 
-    <div class="sticky-top">
-      <section class="container-fluid block__Header">
-        <div class="row sinEspacios">
-          <div class="col d-flex justify-content-start align-items-center">
-            <p class="block__Header__Textos">+54 9 11 2579-5300</p>
-          </div>
-          <div class="col d-flex justify-content-end align-items-center">
-            <a href="https://www.linkedin.com/in/trinidadmargni"  target="_blank">
-              <img
-                src="/imagenes/generales/LinkedIn.png"
-                class="block__Header__Iconos"
-                alt="logo de LinkedIn"
-              />
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-------- Navbar -------->
-
-      <section class="container-fluid sinEspacios">
-        <nav class="navbar navbar-expand-lg navbar-light menu__Navbar">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a
-                  class="navbar-brand menu__Navbar__Brand m-0 p-0"
-                  href="index.html"
-                  > <img
-                src="/imagenes/generales/TRINIDAD.png"
-                class="block__Header__Logo"
-                alt="logo de Trinidad Margni"
-              /></a
-                >
-            <ul class="navbar-nav mx-auto mt-2 mt-lg-0 menu__Navbar__Lista">
-              <li class="nav-item d-flex align-items-center pr-2">
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.html"
-                  >Home<span class="sr-only">(current)</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/resume.html"
-                  >Resume<span class="sr-only">(current)</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/certificates.html"
-                  >Certificates<span class="sr-only">(current)</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/portfolio.html"
-                  >Portfolio<span class="sr-only">(current)</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/contact.html"
-                  >Contact<span class="sr-only">(current)</span></a
-                >
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </section>
+  <header>
+    <div class="header-content">
+      <img src="/imagenes/generales/banner_gray.png" alt="Logo" class="logo">
+      <div class="burger-menu" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="/index.html" class="active">Home</a></li>
+        <li><a href="/pages/resume.html">Resume</a></li>
+        <li><a href="/pages/certifications.html">Certifications</a></li>
+        <li><a href="/pages/portfolio.html">Portfolio</a></li>
+        <li><a href="/pages/contact.html">Contact</a></li>
+      </ul>
     </div>
+  </header>
 
-    <!-------- Main -------->
-<div class="borderContainer">
-    <section class="container-fluid sinEspacios">
-        <div class="row box__Main justify-content-between">
-            <div class="col-xxl-3 col-xl-2 col-lg-3 col-md-4 col-sm-7 col-7 sinEspacios">
-                <img class="img-fluid box__Main__Imagen" src="/imagenes/generales/Main.jpg">
-            </div>
-            <div class="col-xxl-9 col-xl-10 col-lg-9 col-md-8 col-sm-12 col-12 d-flex flex-column justify-content-center align-items-start">
-                <h1>Trinidad Margni</h1>
-                <h2>Senior Project Manager</h2>
-                <p class="box__Main__TextoMain"> With over 4 years of experience in project management, I successfully led initiatives for high-profile clients such as United Airlines and YouTube. My role has involved coordinating with developers and clients across multiple time zones, demonstrating an ability to manage complex projects on a global scale.</p>
-            </div>
-        </div>
-        <p class="box__Main__TextoSecundario">📋 I have effectively managed teams, ensuring successful project outcomes, fostering collaboration and innovation. My leadership skills are supported by my current MBA studies, equipping me to lead with confidence and vision.</p>
-        <p class="box__Main__TextoTerciario">I'm eager to leverage my project management and development experience at digital product companies, where I can contribute to long-term impactful projects. I am excited by the opportunities to work on innovative products and drive substantial growth. Let's connect to explore how my skills and experiences can contribute to your next project.</p>
-    </section>
-</div>
-    <!-------- Box 1 -------->
+<!-- Hero Section -->
 
-    <div class="container-fluid">
-        <div class="row titulo justify-content-center">
-            <h3>Some of my Skills</h3>
-        </div>
-        <div class="borderContainer">
-        <div class="row">
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
-                <ul class="Aptitudes">
-                    <li><b>TBD</b> TBD</li>
-                    <li><b>TBD</b> TBD</li>
-                    <li><b>TBD</b> TBD</li>
-                    <li><b>TBD</b> TBD</li>
-                    <li><b>TBD</b> TBD</li>
-                    <li><b>TBD</b> TBD</li>
-                </ul>
-            </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 sinEspacios">
-                <ul class="Aptitudes">
-                  <li><b>TBD</b> TBD</li>
-                  <li><b>TBD</b> TBD</li>
-                  <li><b>TBD</b> TBD</li>
-                  <li><b>TBD</b> TBD</li>
-                  <li><b>TBD</b> TBD</li>
-                  <li><b>TBD</b> TBD</li>
-                </ul>
-            </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 sinEspacios">
-                <ul class="Aptitudes">
-                  <li><b>TBD</b> TBD</li>
-                  <li><b>TBD</b> TBD</li>
-                  <li><b>TBD</b> TBD</li>
-                  <li><b>TBD</b> TBD</li>
-                  <li><b>TBD</b> TBD</li>
-                  <li><b>TBD</b> TBD</li>
-                </ul>
-            </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 sinEspacios">
-                <ul class="Aptitudes">
-                  <li><b>TBD</b> TBD</li>
-                  <li><b>TBD</b> TBD</li>
-                  <li><b>TBD</b> TBD</li>
-                  <li><b>TBD</b> TBD</li>
-                  <li><b>TBD</b> TBD</li>
-                  <li><b>TBD</b> TBD</li>
-                </ul>
-            </div>
+  <div class="container">
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Trinidad Margni</h1>
+        <h2 class="hero-subtitle">Senior Project Manager</h2>
+        <p class="hero-description">With over 4 years of experience in project management, I successfully led initiatives for high-profile clients such as United Airlines and YouTube. My role has involved coordinating with developers and clients across multiple time zones, demonstrating an ability to manage complex projects on a global scale.</p>
+        <div class="button-group">
+          <a href="/pages/resume.html"><button class="hero-button">My Resume</button></a>
+          <a href="/pages/contact.html"><button class="hero-button">Contact Me</button></a>
         </div>
       </div>
-        </div>
+      <img src="/imagenes/generales/Main.jpg" alt="Trinidad Margni" class="hero-image">
     </section>
+  </div>
 
-    <!-------- Box 2 -------->
+<!-- About Section -->
 
-    <section class="container-fluid">
-        <div class="row titulo justify-content-center">
-            <h3>More info</h3>
-        </div>
-        <div class="row justify-content-center">
-            <a href="/pages/resume.html" class="boton">Access my CV</a>
-        </div>
-        <div class="row justify-content-center">
-            <a href="/pages/portfolio.html" class="boton">Access my Portfolio</a>
-        </div>
-    </section>
-
-    <!-------- Footer -------->
-
-    <footer class="container-fluid box__Footer">
-      <div class="row sinEspacios">
-        <div class="col">
-          <ul class="box__Footer__Lista">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="/pages/resume.html">Resume</a></li>
-            <li><a href="/pages/certificates.html">Certificates</a></li>
-            <li><a href="/pages/portfolio.html">Portfolio</a></li>
-            <li><a href="/pages/contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="col">
-          <div class="row d-flex justify-content-end">
-            <a
-              href="https://www.linkedin.com/in/trinidadmargni"
-              target="_blank"
-            >
-              <img
-                src="/imagenes/generales/LinkedIn.png"
-                alt="logo de LinkedIn"
-              />
-            </a>
-          </div>
-        </div>
+  <section class="about-section">
+    <h2 class="about-title">About Me</h2>
+    <div class="about-content">
+      <p class="about-text">I'm a detail-oriented ESTJ (MBTI) who has been surrounded by technology since childhood, with a passion for learning and a drive for organization and hard work. With a love for exploring new tech and staying on top of innovations, I thrive in environments where I can apply my skills and stay adaptable.</p>
+      <p class="about-text">📋 I have effectively managed teams, ensuring successful project outcomes, fostering collaboration and innovation. My leadership skills are supported by my current MBA studies, equipping me to lead with confidence and vision.</p>
+      <p class="about-text">I'm eager to leverage my project management and development experience at digital product companies, where I can contribute to long-term impactful projects. I am excited by the opportunities to work on innovative products and drive substantial growth. Let's connect to explore how my skills and experiences can contribute to your next project.</p>
+      <div class="skills-container">
+        <div class="skill-tag">Leadership</div>
+        <div class="skill-tag">Time Management</div>
+        <div class="skill-tag">Communication</div>
+        <div class="skill-tag">Strategic Thinking</div>
+        <div class="skill-tag">Problem-Solving</div>
+        <div class="skill-tag">Team Coordination</div>
+        <div class="skill-tag">Adaptability</div>
+        <div class="skill-tag">Agile Methodologies</div>
+        <div class="skill-tag">Digital Marketing</div>
+        <div class="skill-tag">Risk Management</div>
+        <div class="skill-tag">Project Management</div>
+        <div class="skill-tag">Client Communication</div>
+        <div class="skill-tag">Resource Allocation</div>
+        <div class="skill-tag">Budget Management</div>
+        <div class="skill-tag">Conflict Resolution</div>
+        <div class="skill-tag">Quality Assurance</div>
       </div>
-      <p class="firma">Coded by Trinidad Margni, 2021</p>
-    </footer>
+    </div>
+  </section>
 
-    <!-------- Scripts -------->
+<!-- Button to other pages -->
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
+  <div class="resume-button-container">
+    <a href="/pages/resume.html" class="resume-button">View My Resume</a>
+  </div>
 
+<!-- Footer -->
+
+  <footer>
+    <ul class="footer-links">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/pages/resume.html">Resume</a></li>
+      <li><a href="/pages/certifications.html">Certifications</a></li>
+      <li><a href="/pages/portfolio.html">Portfolio</a></li>
+      <li><a href="/pages/contact.html">Contact</a></li>
+    </ul>
+    <p class="footer-firm">Coded by Trinidad Margni, 2024</p>
+    <a href="https://www.linkedin.com/in/trinidadmargni" target="_blank" class="linkedin-button">in</a>
+  </footer>
+
+<!-- Scripts -->
+
+  <script src="/main.js"></script>
 </body>
 
 </html>
