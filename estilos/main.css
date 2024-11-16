@@ -5,7 +5,6 @@
   font-family: 'Fira Sans', sans-serif;
 }
 
-/* Apply smooth transition effects to the body */
 html, body {
   margin: 0;
   padding: 0;
@@ -13,18 +12,18 @@ html, body {
   opacity: 0;
   transform: translateY(10px);
   transition: opacity 0.6s ease, transform 0.6s ease;
-  background-color: #DDEDF8
+  background-color: #F3F4F6;
 }
 
 html.loaded, body.loaded {
   opacity: 1;
   transform: translateY(0);
-  background-color: #DDEDF8
+  background-color: #F3F4F6;
 }
 
 body {
   display: block;
-  color: #333;
+  color: #1A202C;
   line-height: 1.6;
   min-height: 100vh;
   overflow-x: hidden;
@@ -37,12 +36,10 @@ body {
   margin: 0 auto;
   padding: 20px;
   flex: 1;
-  background-color: #DDEDF8
 }
 
-/* Header */
 header {
-  background-color: #aacbe3;
+  background-color: #2D3748;
   padding: 20px;
   position: sticky;
   top: 0;
@@ -53,7 +50,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #aacbe3;
+  background-color: #2D3748;
   padding: 20px;
   position: relative;
 }
@@ -72,7 +69,7 @@ header {
 }
 
 .nav-menu a {
-  color: #333;
+  color: #FFFFFF;
   text-decoration: none;
   font-size: 1rem;
   padding: 8px 16px;
@@ -81,8 +78,8 @@ header {
 }
 
 .nav-menu a:hover {
-  background-color: #d88a8a;
-  color: white;
+  background-color: #4A5568;
+  color: #FFFFFF;
 }
 
 .burger-menu {
@@ -95,16 +92,15 @@ header {
 .burger-menu div {
   width: 25px;
   height: 3px;
-  background-color: #333;
+  background-color: #FFFFFF;
 }
 
-/* Hero Section */
 .hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 40px;
-  background-color: #DDEDF8;
+  background-color: #F3F4F6;
 }
 
 .hero-content {
@@ -114,20 +110,20 @@ header {
 .hero-title {
   font-size: 48px;
   font-weight: bold;
-  color: #333;
+  color: #1A202C;
   margin-bottom: 5px;
 }
 
 .hero-subtitle {
   font-size: 32px;
   font-weight: 600;
-  color: #555;
+  color: #2D3748;
   margin-bottom: 20px;
 }
 
 .hero-description {
   font-size: 16px;
-  color: #555;
+  color: #4A5568;
 }
 
 .button-group {
@@ -137,8 +133,8 @@ header {
 }
 
 .hero-button {
-  background-color: #d88a8a;
-  color: white;
+  background-color: #3182CE;
+  color: #FFFFFF;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -148,7 +144,7 @@ header {
 }
 
 .hero-button:hover {
-  background-color: #c67575;
+  background-color: #2B6CB0;
 }
 
 .hero-image {
@@ -157,9 +153,8 @@ header {
   object-fit: cover;
 }
 
-/* About Section */
 .about-section {
-  background-color: #fdecef;
+  background-color: #EDF2F7;
   padding: 60px 20px;
   width: 100%;
   box-sizing: border-box;
@@ -168,7 +163,7 @@ header {
 
 .about-title {
   font-size: 36px;
-  color: #333;
+  color: #1A202C;
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
@@ -185,7 +180,7 @@ header {
 
 .about-text {
   font-size: 16px;
-  color: #555;
+  color: #4A5568;
   line-height: 1.8;
   max-width: 800px;
   margin: 0 auto;
@@ -200,12 +195,12 @@ header {
 }
 
 .skill-tag {
-  background-color: #fff;
-  border: 1px solid #d88a8a;
+  background-color: #FFFFFF;
+  border: 1px solid #3182CE;
   border-radius: 20px;
   padding: 5px 15px;
   font-size: 14px;
-  color: #333;
+  color: #1A202C;
   font-weight: 500;
   transition: transform 0.2s;
 }
@@ -214,7 +209,6 @@ header {
   transform: scale(1.1);
 }
 
-/* Button to other pages */
 .resume-button-container {
   display: flex;
   justify-content: center;
@@ -222,8 +216,8 @@ header {
 }
 
 .resume-button {
-  background-color: #d88a8a;
-  color: white;
+  background-color: #3182CE;
+  color: #FFFFFF;
   padding: 16px 32px;
   border: none;
   border-radius: 30px;
@@ -231,31 +225,30 @@ header {
   font-weight: bold;
   font-size: 18px;
   transition: background-color 0.3s, transform 0.2s;
-  box-shadow: 0 4px 15px rgba(216, 138, 138, 0.4);
+  box-shadow: 0 4px 15px rgba(49, 130, 206, 0.4);
 }
 
 .resume-button:hover {
-  background-color: #c67575;
+  background-color: #2B6CB0;
   transform: scale(1.05);
 }
 
-/* Certifications Section */
 .certifications-section {
   padding: 60px 20px;
-  background-color: #f7f7f7;
+  background-color: #F7FAFC;
   text-align: center;
 }
 
 .certifications-title {
   font-size: 36px;
-  color: #333;
+  color: #1A202C;
   font-weight: bold;
   margin-bottom: 40px;
 }
 
 .certifications-category {
   font-size: 28px;
-  color: #555;
+  color: #2D3748;
   font-weight: 600;
   margin-top: 40px;
   margin-bottom: 20px;
@@ -291,16 +284,15 @@ header {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
-/* Contact Section */
 .contact-section {
   padding: 60px 20px;
-  background-color: #f7f7f7;
+  background-color: #F7FAFC;
   text-align: center;
 }
 
 .contact-title {
   font-size: 36px;
-  color: #333;
+  color: #1A202C;
   font-weight: bold;
   margin-bottom: 40px;
 }
@@ -322,14 +314,14 @@ header {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #333;
+  color: #1A202C;
   font-size: 18px;
   font-weight: 500;
   transition: color 0.3s;
 }
 
 .contact-link:hover {
-  color: #d88a8a;
+  color: #3182CE;
 }
 
 .contact-logo {
@@ -338,11 +330,10 @@ header {
   margin-right: 10px;
 }
 
-/* CV Section */
 .cv-section {
   text-align: center;
   padding: 60px 20px;
-  background-color: #fdecef;
+  background-color: #EDF2F7;
 }
 
 .cv-buttons {
@@ -353,8 +344,8 @@ header {
 }
 
 .cv-button {
-  background-color: #d88a8a;
-  color: white;
+  background-color: #3182CE;
+  color: #FFFFFF;
   padding: 12px 24px;
   border: none;
   border-radius: 30px;
@@ -362,11 +353,11 @@ header {
   font-weight: bold;
   font-size: 16px;
   transition: background-color 0.3s, transform 0.2s;
-  box-shadow: 0 4px 15px rgba(216, 138, 138, 0.4);
+  box-shadow: 0 4px 15px rgba(49, 130, 206, 0.4);
 }
 
 .cv-button:hover {
-  background-color: #c67575;
+  background-color: #2B6CB0;
   transform: scale(1.05);
 }
 
@@ -380,31 +371,30 @@ header {
   width: 80%;
   max-width: 1000px;
   border-radius: 10px;
-  box-shadow: 0 0 20px 8px rgba(255, 182, 193, 0.3);
+  box-shadow: 0 0 20px 8px rgba(49, 130, 206, 0.3);
   transition: box-shadow 0.3s;
 }
 
 .cv-image:hover {
-  box-shadow: 0 0 35px 15px rgba(255, 182, 193, 0.5);
+  box-shadow: 0 0 35px 15px rgba(49, 130, 206, 0.5);
 }
 
-/* Portfolio Section */
 .portfolio-section {
   padding: 60px 20px;
-  background-color: #f7f7f7;
+  background-color: #F7FAFC;
   text-align: center;
 }
 
 .portfolio-title {
   font-size: 36px;
-  color: #333;
+  color: #1A202C;
   font-weight: bold;
   margin-bottom: 40px;
 }
 
 .portfolio-category {
   font-size: 28px;
-  color: #555;
+  color: #2D3748;
   font-weight: 600;
   margin-top: 40px;
   margin-bottom: 30px;
@@ -443,7 +433,7 @@ header {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
-  color: white;
+  color: #FFFFFF;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -469,22 +459,21 @@ header {
 
 .portfolio-button {
   font-size: 18px;
-  background-color: #d88a8a;
+  background-color: #3182CE;
   padding: 8px 16px;
   border-radius: 20px;
   text-decoration: none;
-  color: white;
+  color: #FFFFFF;
   transition: background-color 0.3s ease;
 }
 
 .portfolio-button:hover {
-  background-color: #c67575;
+  background-color: #2B6CB0;
 }
 
-/* Footer */
 footer {
-  background-color: #333;
-  color: white;
+  background-color: #1A202C;
+  color: #FFFFFF;
   padding: 20px 40px;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
@@ -505,13 +494,13 @@ footer {
 
 .footer-links a {
   text-decoration: none;
-  color: white;
+  color: #FFFFFF;
   font-size: 14px;
   transition: color 0.3s;
 }
 
 .footer-links a:hover {
-  color: #d88a8a;
+  color: #3182CE;
 }
 
 .footer-firm {
@@ -522,8 +511,8 @@ footer {
 }
 
 .linkedin-button {
-  background-color: white;
-  color: #333;
+  background-color: #FFFFFF;
+  color: #1A202C;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -537,7 +526,7 @@ footer {
 }
 
 .linkedin-button:hover {
-  background-color: #d9d9d9;
+  background-color: #E2E8F0;
 }
 
 /* Media Queries */
@@ -551,14 +540,11 @@ footer {
   .nav-menu {
     display: none;
     flex-direction: column;
-    background-color: #aacbe3;
-    position: absolute;
+    background-color: #2D3748;
     top: 70px;
     right: 0;
     width: 100%;
     padding: 10px 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   }
 
   .nav-menu li {
@@ -572,6 +558,7 @@ footer {
 
   .burger-menu {
     display: flex;
+    margin-top: 20px;
   }
 
   .hero {
@@ -627,6 +614,13 @@ footer {
   .about-content, .portfolio-grid, .certifications-gallery, .contact-content {
     flex-direction: column;
     align-items: center;
+  }
+
+  .certifications-section, .certifications-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .about-text, .certifications-category, .portfolio-category {
@@ -712,6 +706,18 @@ footer {
 
   .skills-container, .portfolio-grid, .certifications-gallery {
     gap: 10px;
+  }
+
+  .certifications-section, .certifications-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .certification-image {
+    width: 100%
   }
 
   .skill-tag {
